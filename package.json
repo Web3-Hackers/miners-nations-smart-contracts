@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "truffle-config.js",
   "repository": "git@github.com:Web3-Hackers/miners-nations-smart-contracts.git",
-  "author": "GPL-3.0-or-later",
-  "license": "MIT",
+  "author": "YosephKS",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.1",
     "@truffle/hdwallet-provider": "^2.0.0",
