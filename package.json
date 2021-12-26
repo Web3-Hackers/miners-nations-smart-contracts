@@ -1,0 +1,20 @@
+{
+  "name": "miners-nations-smart-contracts",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "repository": "git@github.com:Web3-Hackers/miners-nations-smart-contracts.git",
+  "author": "YosephKS",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.1",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "truffle-plugin-verify": "^0.5.20"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "console": "truffle console",
+    "develop": "truffle develop",
+    "migrate": "truffle migrate",
+    "test": "truffle test"
+  }
+}
