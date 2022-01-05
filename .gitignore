@@ -106,4 +106,3 @@ dist
 yarn.lock
 package-lock.json
 .secret
-build
