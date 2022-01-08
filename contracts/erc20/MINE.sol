@@ -8,11 +8,9 @@ import "../tokens/ERC20Custom.sol";
 contract MINE is ERC20Custom {
     using SafeMath for uint256;
     enum TokenOperation {
-        TRANSFER,
-        MINT
+        MINT,
+        TRANSFER
     }
-
-    event MINTTest(uint256 amount);
 
     /**
      * Represents the Maximum Ownership percentage a wallet can hold MINE Token
@@ -38,15 +36,16 @@ contract MINE is ERC20Custom {
         uint256 ReceiverBalance = balanceOf(to);
         // Don't need to check when first minting
         if (totalSupply() != 0) {
+            uint256 tokenSupplyPostOperation = calculateTotalSupplyByTokenOperation(
+                    amount,
+                    tokenOperation
+                );
             require(
                 SafeMath.add(amount, ReceiverBalance) <=
                     // Divided by 100000 because it is using 3 decimals and represented as a percentage (2 decimals)
                     SafeMath.div(
                         SafeMath.mul(
-                            calculateTotalSupplyByTokenOperation(
-                                amount,
-                                tokenOperation
-                            ),
+                            tokenSupplyPostOperation,
                             _maximumOwnershipPercentage
                         ),
                         100000
@@ -60,13 +59,11 @@ contract MINE is ERC20Custom {
     function calculateTotalSupplyByTokenOperation(
         uint256 mintedAmount,
         TokenOperation tokenOperation
-    ) internal returns (uint256) {
-        if (uint8(tokenOperation) == 0) {
-            return totalSupply();
-        } else {
-            uint256 total = totalSupply() + mintedAmount;
-            emit MINTTest(total);
+    ) internal view returns (uint256) {
+        if (tokenOperation == TokenOperation.MINT) {
             return totalSupply() + mintedAmount;
+        } else {
+            return totalSupply();
         }
     }
 
@@ -104,6 +101,15 @@ contract MINE is ERC20Custom {
         _mint(to, amount);
     }
 
+    function transfer(address to, uint256 amount)
+        public
+        override
+        onlyRestrictedOwnership(to, amount, TokenOperation.TRANSFER)
+        returns (bool)
+    {
+        return super.transfer(to, amount);
+    }
+
     /**
      * Add `onlyRestrictedOwnership` modifier to check beforehand whether the total
      * accumulation exceeds the maxiumum ownership percentage, represented by
@@ -113,11 +119,7 @@ contract MINE is ERC20Custom {
         address from,
         address to,
         uint256 amount
-    )
-        internal
-        override
-        onlyRestrictedOwnership(to, amount, TokenOperation.TRANSFER)
-    {
+    ) internal override {
         super._beforeTokenTransfer(from, to, amount);
     }
 }

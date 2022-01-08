@@ -64,13 +64,14 @@ contract("MINE Token", (accounts) => {
       from: accounts[0],
     });
 
-    // await this.mine.mint(accounts[1], initialMintAmount * 0.25, {
-    //   from: accounts[0],
-    // });
+    // Adding 25% of initial supply will result in 20% post ownership
+    await this.mine.mint(accounts[1], initialMintAmount * 0.25, {
+      from: accounts[0],
+    });
 
-    // expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(
-    //   initialMintAmount * 0.25
-    // );
+    expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(
+      initialMintAmount * 0.25
+    );
   });
 
   it("Should enable mint to address with less than or equal to the maximum ownership", () => {});

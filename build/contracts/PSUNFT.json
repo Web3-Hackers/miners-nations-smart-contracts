@@ -18231,7 +18231,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7611
+        7632
       ],
       "ERC1155Supply": [
         1719
@@ -18255,18 +18255,18 @@
         104
       ],
       "PSUNFT": [
-        7335
+        7356
       ],
       "Pausable": [
         258
       ]
     },
-    "id": 7336,
+    "id": 7357,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7271,
+        "id": 7292,
         "literals": [
           "solidity",
           "^",
@@ -18279,11 +18279,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7272,
+        "id": 7293,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7336,
-        "sourceUnit": 7612,
+        "scope": 7357,
+        "sourceUnit": 7633,
         "src": "71:37:45",
         "symbolAliases": [],
         "unitAlias": ""
@@ -18293,13 +18293,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7273,
+              "id": 7294,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7611,
+              "referencedDeclaration": 7632,
               "src": "129:13:45"
             },
-            "id": 7274,
+            "id": 7295,
             "nodeType": "InheritanceSpecifier",
             "src": "129:13:45"
           }
@@ -18308,10 +18308,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7335,
+        "id": 7356,
         "linearizedBaseContracts": [
-          7335,
-          7611,
+          7356,
+          7632,
           1719,
           1586,
           258,
@@ -18329,16 +18329,16 @@
         "nodes": [
           {
             "canonicalName": "PSUNFT.PSUDetails",
-            "id": 7283,
+            "id": 7304,
             "members": [
               {
                 "constant": false,
-                "id": 7276,
+                "id": 7297,
                 "mutability": "mutable",
                 "name": "efficiency",
                 "nameLocation": "183:10:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "177:16:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18347,7 +18347,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7275,
+                  "id": 7296,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "177:5:45",
@@ -18360,12 +18360,12 @@
               },
               {
                 "constant": false,
-                "id": 7278,
+                "id": 7299,
                 "mutability": "mutable",
                 "name": "wattage",
                 "nameLocation": "209:7:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "203:13:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18374,7 +18374,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7277,
+                  "id": 7298,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "203:5:45",
@@ -18387,12 +18387,12 @@
               },
               {
                 "constant": false,
-                "id": 7280,
+                "id": 7301,
                 "mutability": "mutable",
                 "name": "rating",
                 "nameLocation": "233:6:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "226:13:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18401,7 +18401,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7279,
+                  "id": 7300,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "226:6:45",
@@ -18414,12 +18414,12 @@
               },
               {
                 "constant": false,
-                "id": 7282,
+                "id": 7303,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "256:5:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "249:12:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18428,7 +18428,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7281,
+                  "id": 7302,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "249:6:45",
@@ -18443,29 +18443,29 @@
             "name": "PSUDetails",
             "nameLocation": "156:10:45",
             "nodeType": "StructDefinition",
-            "scope": 7335,
+            "scope": 7356,
             "src": "149:119:45",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7288,
+            "id": 7309,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "313:13:45",
             "nodeType": "VariableDeclaration",
-            "scope": 7335,
+            "scope": 7356,
             "src": "274:52:45",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7283_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7304_storage_$",
               "typeString": "mapping(uint256 => struct PSUNFT.PSUDetails)"
             },
             "typeName": {
-              "id": 7287,
+              "id": 7308,
               "keyType": {
-                "id": 7284,
+                "id": 7305,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "282:7:45",
@@ -18477,23 +18477,23 @@
               "nodeType": "Mapping",
               "src": "274:30:45",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7283_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7304_storage_$",
                 "typeString": "mapping(uint256 => struct PSUNFT.PSUDetails)"
               },
               "valueType": {
-                "id": 7286,
+                "id": 7307,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7285,
+                  "id": 7306,
                   "name": "PSUDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7283,
+                  "referencedDeclaration": 7304,
                   "src": "293:10:45"
                 },
-                "referencedDeclaration": 7283,
+                "referencedDeclaration": 7304,
                 "src": "293:10:45",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_PSUDetails_$7283_storage_ptr",
+                  "typeIdentifier": "t_struct$_PSUDetails_$7304_storage_ptr",
                   "typeString": "struct PSUNFT.PSUDetails"
                 }
               }
@@ -18502,23 +18502,23 @@
           },
           {
             "body": {
-              "id": 7296,
+              "id": 7317,
               "nodeType": "Block",
               "src": "385:2:45",
               "statements": []
             },
-            "id": 7297,
+            "id": 7318,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7293,
+                    "id": 7314,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7290,
+                    "referencedDeclaration": 7311,
                     "src": "379:4:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -18526,13 +18526,13 @@
                     }
                   }
                 ],
-                "id": 7294,
+                "id": 7315,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7292,
+                  "id": 7313,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7611,
+                  "referencedDeclaration": 7632,
                   "src": "365:13:45"
                 },
                 "nodeType": "ModifierInvocation",
@@ -18543,17 +18543,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7291,
+              "id": 7312,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7290,
+                  "id": 7311,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "359:4:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7297,
+                  "scope": 7318,
                   "src": "345:18:45",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18562,7 +18562,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7289,
+                    "id": 7310,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "345:6:45",
@@ -18577,12 +18577,12 @@
               "src": "344:20:45"
             },
             "returnParameters": {
-              "id": 7295,
+              "id": 7316,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "385:0:45"
             },
-            "scope": 7335,
+            "scope": 7356,
             "src": "333:54:45",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -18590,71 +18590,71 @@
           },
           {
             "body": {
-              "id": 7327,
+              "id": 7348,
               "nodeType": "Block",
               "src": "581:265:45",
               "statements": [
                 {
                   "assignments": [
-                    7312
+                    7333
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7312,
+                      "id": 7333,
                       "mutability": "mutable",
                       "name": "psuDetailsByTokenId",
                       "nameLocation": "609:19:45",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7327,
+                      "scope": 7348,
                       "src": "591:37:45",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                        "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                         "typeString": "struct PSUNFT.PSUDetails"
                       },
                       "typeName": {
-                        "id": 7311,
+                        "id": 7332,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7310,
+                          "id": 7331,
                           "name": "PSUDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7283,
+                          "referencedDeclaration": 7304,
                           "src": "591:10:45"
                         },
-                        "referencedDeclaration": 7283,
+                        "referencedDeclaration": 7304,
                         "src": "591:10:45",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PSUDetails_$7283_storage_ptr",
+                          "typeIdentifier": "t_struct$_PSUDetails_$7304_storage_ptr",
                           "typeString": "struct PSUNFT.PSUDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7316,
+                  "id": 7337,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7313,
+                      "id": 7334,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7288,
+                      "referencedDeclaration": 7309,
                       "src": "631:13:45",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7283_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7304_storage_$",
                         "typeString": "mapping(uint256 => struct PSUNFT.PSUDetails storage ref)"
                       }
                     },
-                    "id": 7315,
+                    "id": 7336,
                     "indexExpression": {
-                      "id": 7314,
+                      "id": 7335,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7299,
+                      "referencedDeclaration": 7320,
                       "src": "645:2:45",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -18668,7 +18668,7 @@
                     "nodeType": "IndexAccess",
                     "src": "631:17:45",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PSUDetails_$7283_storage",
+                      "typeIdentifier": "t_struct$_PSUDetails_$7304_storage",
                       "typeString": "struct PSUNFT.PSUDetails storage ref"
                     }
                   },
@@ -18680,25 +18680,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7317,
+                          "id": 7338,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "679:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7318,
+                        "id": 7339,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "efficiency",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7276,
+                        "referencedDeclaration": 7297,
                         "src": "679:30:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -18707,25 +18707,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7319,
+                          "id": 7340,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "723:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7320,
+                        "id": 7341,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "wattage",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7278,
+                        "referencedDeclaration": 7299,
                         "src": "723:27:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -18734,25 +18734,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7321,
+                          "id": 7342,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "764:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7322,
+                        "id": 7343,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rating",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7280,
+                        "referencedDeclaration": 7301,
                         "src": "764:26:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -18761,25 +18761,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7323,
+                          "id": 7344,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "804:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7324,
+                        "id": 7345,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7282,
+                        "referencedDeclaration": 7303,
                         "src": "804:25:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -18787,7 +18787,7 @@
                         }
                       }
                     ],
-                    "id": 7325,
+                    "id": 7346,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -18800,15 +18800,15 @@
                       "typeString": "tuple(uint8,uint8,string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7309,
-                  "id": 7326,
+                  "functionReturnParameters": 7330,
+                  "id": 7347,
                   "nodeType": "Return",
                   "src": "658:181:45"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7328,
+            "id": 7349,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -18816,17 +18816,17 @@
             "nameLocation": "402:15:45",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7300,
+              "id": 7321,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7299,
+                  "id": 7320,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "426:2:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "418:10:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -18835,7 +18835,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7298,
+                    "id": 7319,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "418:7:45",
@@ -18850,17 +18850,17 @@
               "src": "417:12:45"
             },
             "returnParameters": {
-              "id": 7309,
+              "id": 7330,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7302,
+                  "id": 7323,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "488:5:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -18869,7 +18869,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7301,
+                    "id": 7322,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "488:5:45",
@@ -18882,12 +18882,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7304,
+                  "id": 7325,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "507:5:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -18896,7 +18896,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7303,
+                    "id": 7324,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "507:5:45",
@@ -18909,12 +18909,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7306,
+                  "id": 7327,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "526:13:45",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18923,7 +18923,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7305,
+                    "id": 7326,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "526:6:45",
@@ -18936,12 +18936,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7308,
+                  "id": 7329,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "553:13:45",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18950,7 +18950,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7307,
+                    "id": 7328,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "553:6:45",
@@ -18964,7 +18964,7 @@
               ],
               "src": "474:102:45"
             },
-            "scope": 7335,
+            "scope": 7356,
             "src": "393:453:45",
             "stateMutability": "view",
             "virtual": false,
@@ -18972,21 +18972,21 @@
           },
           {
             "body": {
-              "id": 7333,
+              "id": 7354,
               "nodeType": "Block",
               "src": "896:2:45",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7334,
+            "id": 7355,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7331,
+                "id": 7352,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7330,
+                  "id": 7351,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -19000,25 +19000,25 @@
             "nameLocation": "861:15:45",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7329,
+              "id": 7350,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "876:2:45"
             },
             "returnParameters": {
-              "id": 7332,
+              "id": 7353,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "896:0:45"
             },
-            "scope": 7335,
+            "scope": 7356,
             "src": "852:46:45",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7336,
+        "scope": 7357,
         "src": "110:790:45",
         "usedErrors": []
       }
@@ -19041,7 +19041,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7611
+        7632
       ],
       "ERC1155Supply": [
         1719
@@ -19065,18 +19065,18 @@
         104
       ],
       "PSUNFT": [
-        7335
+        7356
       ],
       "Pausable": [
         258
       ]
     },
-    "id": 7336,
+    "id": 7357,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7271,
+        "id": 7292,
         "literals": [
           "solidity",
           "^",
@@ -19089,11 +19089,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7272,
+        "id": 7293,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7336,
-        "sourceUnit": 7612,
+        "scope": 7357,
+        "sourceUnit": 7633,
         "src": "71:37:45",
         "symbolAliases": [],
         "unitAlias": ""
@@ -19103,13 +19103,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7273,
+              "id": 7294,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7611,
+              "referencedDeclaration": 7632,
               "src": "129:13:45"
             },
-            "id": 7274,
+            "id": 7295,
             "nodeType": "InheritanceSpecifier",
             "src": "129:13:45"
           }
@@ -19118,10 +19118,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7335,
+        "id": 7356,
         "linearizedBaseContracts": [
-          7335,
-          7611,
+          7356,
+          7632,
           1719,
           1586,
           258,
@@ -19139,16 +19139,16 @@
         "nodes": [
           {
             "canonicalName": "PSUNFT.PSUDetails",
-            "id": 7283,
+            "id": 7304,
             "members": [
               {
                 "constant": false,
-                "id": 7276,
+                "id": 7297,
                 "mutability": "mutable",
                 "name": "efficiency",
                 "nameLocation": "183:10:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "177:16:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19157,7 +19157,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7275,
+                  "id": 7296,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "177:5:45",
@@ -19170,12 +19170,12 @@
               },
               {
                 "constant": false,
-                "id": 7278,
+                "id": 7299,
                 "mutability": "mutable",
                 "name": "wattage",
                 "nameLocation": "209:7:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "203:13:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19184,7 +19184,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7277,
+                  "id": 7298,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "203:5:45",
@@ -19197,12 +19197,12 @@
               },
               {
                 "constant": false,
-                "id": 7280,
+                "id": 7301,
                 "mutability": "mutable",
                 "name": "rating",
                 "nameLocation": "233:6:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "226:13:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19211,7 +19211,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7279,
+                  "id": 7300,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "226:6:45",
@@ -19224,12 +19224,12 @@
               },
               {
                 "constant": false,
-                "id": 7282,
+                "id": 7303,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "256:5:45",
                 "nodeType": "VariableDeclaration",
-                "scope": 7283,
+                "scope": 7304,
                 "src": "249:12:45",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19238,7 +19238,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7281,
+                  "id": 7302,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "249:6:45",
@@ -19253,29 +19253,29 @@
             "name": "PSUDetails",
             "nameLocation": "156:10:45",
             "nodeType": "StructDefinition",
-            "scope": 7335,
+            "scope": 7356,
             "src": "149:119:45",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7288,
+            "id": 7309,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "313:13:45",
             "nodeType": "VariableDeclaration",
-            "scope": 7335,
+            "scope": 7356,
             "src": "274:52:45",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7283_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7304_storage_$",
               "typeString": "mapping(uint256 => struct PSUNFT.PSUDetails)"
             },
             "typeName": {
-              "id": 7287,
+              "id": 7308,
               "keyType": {
-                "id": 7284,
+                "id": 7305,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "282:7:45",
@@ -19287,23 +19287,23 @@
               "nodeType": "Mapping",
               "src": "274:30:45",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7283_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7304_storage_$",
                 "typeString": "mapping(uint256 => struct PSUNFT.PSUDetails)"
               },
               "valueType": {
-                "id": 7286,
+                "id": 7307,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7285,
+                  "id": 7306,
                   "name": "PSUDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7283,
+                  "referencedDeclaration": 7304,
                   "src": "293:10:45"
                 },
-                "referencedDeclaration": 7283,
+                "referencedDeclaration": 7304,
                 "src": "293:10:45",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_PSUDetails_$7283_storage_ptr",
+                  "typeIdentifier": "t_struct$_PSUDetails_$7304_storage_ptr",
                   "typeString": "struct PSUNFT.PSUDetails"
                 }
               }
@@ -19312,23 +19312,23 @@
           },
           {
             "body": {
-              "id": 7296,
+              "id": 7317,
               "nodeType": "Block",
               "src": "385:2:45",
               "statements": []
             },
-            "id": 7297,
+            "id": 7318,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7293,
+                    "id": 7314,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7290,
+                    "referencedDeclaration": 7311,
                     "src": "379:4:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -19336,13 +19336,13 @@
                     }
                   }
                 ],
-                "id": 7294,
+                "id": 7315,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7292,
+                  "id": 7313,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7611,
+                  "referencedDeclaration": 7632,
                   "src": "365:13:45"
                 },
                 "nodeType": "ModifierInvocation",
@@ -19353,17 +19353,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7291,
+              "id": 7312,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7290,
+                  "id": 7311,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "359:4:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7297,
+                  "scope": 7318,
                   "src": "345:18:45",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19372,7 +19372,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7289,
+                    "id": 7310,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "345:6:45",
@@ -19387,12 +19387,12 @@
               "src": "344:20:45"
             },
             "returnParameters": {
-              "id": 7295,
+              "id": 7316,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "385:0:45"
             },
-            "scope": 7335,
+            "scope": 7356,
             "src": "333:54:45",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -19400,71 +19400,71 @@
           },
           {
             "body": {
-              "id": 7327,
+              "id": 7348,
               "nodeType": "Block",
               "src": "581:265:45",
               "statements": [
                 {
                   "assignments": [
-                    7312
+                    7333
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7312,
+                      "id": 7333,
                       "mutability": "mutable",
                       "name": "psuDetailsByTokenId",
                       "nameLocation": "609:19:45",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7327,
+                      "scope": 7348,
                       "src": "591:37:45",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                        "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                         "typeString": "struct PSUNFT.PSUDetails"
                       },
                       "typeName": {
-                        "id": 7311,
+                        "id": 7332,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7310,
+                          "id": 7331,
                           "name": "PSUDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7283,
+                          "referencedDeclaration": 7304,
                           "src": "591:10:45"
                         },
-                        "referencedDeclaration": 7283,
+                        "referencedDeclaration": 7304,
                         "src": "591:10:45",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_PSUDetails_$7283_storage_ptr",
+                          "typeIdentifier": "t_struct$_PSUDetails_$7304_storage_ptr",
                           "typeString": "struct PSUNFT.PSUDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7316,
+                  "id": 7337,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7313,
+                      "id": 7334,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7288,
+                      "referencedDeclaration": 7309,
                       "src": "631:13:45",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7283_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_PSUDetails_$7304_storage_$",
                         "typeString": "mapping(uint256 => struct PSUNFT.PSUDetails storage ref)"
                       }
                     },
-                    "id": 7315,
+                    "id": 7336,
                     "indexExpression": {
-                      "id": 7314,
+                      "id": 7335,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7299,
+                      "referencedDeclaration": 7320,
                       "src": "645:2:45",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -19478,7 +19478,7 @@
                     "nodeType": "IndexAccess",
                     "src": "631:17:45",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_PSUDetails_$7283_storage",
+                      "typeIdentifier": "t_struct$_PSUDetails_$7304_storage",
                       "typeString": "struct PSUNFT.PSUDetails storage ref"
                     }
                   },
@@ -19490,25 +19490,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7317,
+                          "id": 7338,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "679:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7318,
+                        "id": 7339,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "efficiency",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7276,
+                        "referencedDeclaration": 7297,
                         "src": "679:30:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -19517,25 +19517,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7319,
+                          "id": 7340,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "723:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7320,
+                        "id": 7341,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "wattage",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7278,
+                        "referencedDeclaration": 7299,
                         "src": "723:27:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -19544,25 +19544,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7321,
+                          "id": 7342,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "764:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7322,
+                        "id": 7343,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rating",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7280,
+                        "referencedDeclaration": 7301,
                         "src": "764:26:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19571,25 +19571,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7323,
+                          "id": 7344,
                           "name": "psuDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7312,
+                          "referencedDeclaration": 7333,
                           "src": "804:19:45",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_PSUDetails_$7283_memory_ptr",
+                            "typeIdentifier": "t_struct$_PSUDetails_$7304_memory_ptr",
                             "typeString": "struct PSUNFT.PSUDetails memory"
                           }
                         },
-                        "id": 7324,
+                        "id": 7345,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7282,
+                        "referencedDeclaration": 7303,
                         "src": "804:25:45",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19597,7 +19597,7 @@
                         }
                       }
                     ],
-                    "id": 7325,
+                    "id": 7346,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -19610,15 +19610,15 @@
                       "typeString": "tuple(uint8,uint8,string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7309,
-                  "id": 7326,
+                  "functionReturnParameters": 7330,
+                  "id": 7347,
                   "nodeType": "Return",
                   "src": "658:181:45"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7328,
+            "id": 7349,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -19626,17 +19626,17 @@
             "nameLocation": "402:15:45",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7300,
+              "id": 7321,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7299,
+                  "id": 7320,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "426:2:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "418:10:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19645,7 +19645,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7298,
+                    "id": 7319,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "418:7:45",
@@ -19660,17 +19660,17 @@
               "src": "417:12:45"
             },
             "returnParameters": {
-              "id": 7309,
+              "id": 7330,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7302,
+                  "id": 7323,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "488:5:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19679,7 +19679,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7301,
+                    "id": 7322,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "488:5:45",
@@ -19692,12 +19692,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7304,
+                  "id": 7325,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "507:5:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19706,7 +19706,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7303,
+                    "id": 7324,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "507:5:45",
@@ -19719,12 +19719,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7306,
+                  "id": 7327,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "526:13:45",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19733,7 +19733,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7305,
+                    "id": 7326,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "526:6:45",
@@ -19746,12 +19746,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7308,
+                  "id": 7329,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7328,
+                  "scope": 7349,
                   "src": "553:13:45",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19760,7 +19760,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7307,
+                    "id": 7328,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "553:6:45",
@@ -19774,7 +19774,7 @@
               ],
               "src": "474:102:45"
             },
-            "scope": 7335,
+            "scope": 7356,
             "src": "393:453:45",
             "stateMutability": "view",
             "virtual": false,
@@ -19782,21 +19782,21 @@
           },
           {
             "body": {
-              "id": 7333,
+              "id": 7354,
               "nodeType": "Block",
               "src": "896:2:45",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7334,
+            "id": 7355,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7331,
+                "id": 7352,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7330,
+                  "id": 7351,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -19810,25 +19810,25 @@
             "nameLocation": "861:15:45",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7329,
+              "id": 7350,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "876:2:45"
             },
             "returnParameters": {
-              "id": 7332,
+              "id": 7353,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "896:0:45"
             },
-            "scope": 7335,
+            "scope": 7356,
             "src": "852:46:45",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7336,
+        "scope": 7357,
         "src": "110:790:45",
         "usedErrors": []
       }
@@ -19841,7 +19841,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-08T16:16:59.070Z",
+  "updatedAt": "2022-01-08T17:12:57.632Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
