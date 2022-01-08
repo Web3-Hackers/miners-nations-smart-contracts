@@ -1,5 +1,6 @@
 const MINE = artifacts.require("MINE");
 
 module.exports = function (deployer) {
-  deployer.deploy(MINE);
+  // 20000 -> 20% Maximum Ownership of Total Supply
+  deployer.deploy(MINE, 20000);
 };

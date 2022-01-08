@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "main": "truffle-config.js",
   "repository": "git@github.com:Web3-Hackers/miners-nations-smart-contracts.git",
-  "author": "YosephKS",
+  "author": "Yoseph Kurnia Soenggoro",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.1",
     "@truffle/hdwallet-provider": "^2.0.0",
+    "chai": "^4.3.4",
     "dotenv": "^10.0.0",
     "truffle-plugin-verify": "^0.5.20"
   },
@@ -16,6 +17,7 @@
     "console": "truffle console",
     "develop": "truffle develop",
     "migrate": "truffle migrate",
-    "test": "truffle test"
+    "test": "truffle test",
+    "verify": "truffle run verify"
   }
 }
