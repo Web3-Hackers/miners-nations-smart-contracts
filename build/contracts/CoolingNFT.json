@@ -18413,7 +18413,7 @@
         4931
       ],
       "CoolingNFT": [
-        7092
+        7198
       ],
       "ERC1155": [
         1354
@@ -18422,7 +18422,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7632
+        7738
       ],
       "ERC1155Supply": [
         1719
@@ -18449,12 +18449,12 @@
         258
       ]
     },
-    "id": 7093,
+    "id": 7199,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7016,
+        "id": 7122,
         "literals": [
           "solidity",
           "^",
@@ -18467,11 +18467,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7017,
+        "id": 7123,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7093,
-        "sourceUnit": 7633,
+        "scope": 7199,
+        "sourceUnit": 7739,
         "src": "71:37:41",
         "symbolAliases": [],
         "unitAlias": ""
@@ -18481,13 +18481,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7018,
+              "id": 7124,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7632,
+              "referencedDeclaration": 7738,
               "src": "133:13:41"
             },
-            "id": 7019,
+            "id": 7125,
             "nodeType": "InheritanceSpecifier",
             "src": "133:13:41"
           }
@@ -18496,10 +18496,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7092,
+        "id": 7198,
         "linearizedBaseContracts": [
-          7092,
-          7632,
+          7198,
+          7738,
           1719,
           1586,
           258,
@@ -18517,16 +18517,16 @@
         "nodes": [
           {
             "canonicalName": "CoolingNFT.CoolingDetails",
-            "id": 7032,
+            "id": 7138,
             "members": [
               {
                 "constant": false,
-                "id": 7021,
+                "id": 7127,
                 "mutability": "mutable",
                 "name": "fanSpeed",
                 "nameLocation": "193:8:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "185:16:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18535,7 +18535,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7020,
+                  "id": 7126,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "185:7:41",
@@ -18548,12 +18548,12 @@
               },
               {
                 "constant": false,
-                "id": 7023,
+                "id": 7129,
                 "mutability": "mutable",
                 "name": "fanCount",
                 "nameLocation": "217:8:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "211:14:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18562,7 +18562,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7022,
+                  "id": 7128,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "211:5:41",
@@ -18575,12 +18575,12 @@
               },
               {
                 "constant": false,
-                "id": 7025,
+                "id": 7131,
                 "mutability": "mutable",
                 "name": "coolerType",
                 "nameLocation": "242:10:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "235:17:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18589,7 +18589,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7024,
+                  "id": 7130,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "235:6:41",
@@ -18602,12 +18602,12 @@
               },
               {
                 "constant": false,
-                "id": 7027,
+                "id": 7133,
                 "mutability": "mutable",
                 "name": "coolantType",
                 "nameLocation": "269:11:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "262:18:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18616,7 +18616,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7026,
+                  "id": 7132,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "262:6:41",
@@ -18629,12 +18629,12 @@
               },
               {
                 "constant": false,
-                "id": 7029,
+                "id": 7135,
                 "mutability": "mutable",
                 "name": "coolingMethod",
                 "nameLocation": "297:13:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "290:20:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18643,7 +18643,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7028,
+                  "id": 7134,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "290:6:41",
@@ -18656,12 +18656,12 @@
               },
               {
                 "constant": false,
-                "id": 7031,
+                "id": 7137,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "327:5:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "320:12:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18670,7 +18670,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7030,
+                  "id": 7136,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "320:6:41",
@@ -18685,29 +18685,29 @@
             "name": "CoolingDetails",
             "nameLocation": "160:14:41",
             "nodeType": "StructDefinition",
-            "scope": 7092,
+            "scope": 7198,
             "src": "153:186:41",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7037,
+            "id": 7143,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "388:13:41",
             "nodeType": "VariableDeclaration",
-            "scope": 7092,
+            "scope": 7198,
             "src": "345:56:41",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7032_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7138_storage_$",
               "typeString": "mapping(uint256 => struct CoolingNFT.CoolingDetails)"
             },
             "typeName": {
-              "id": 7036,
+              "id": 7142,
               "keyType": {
-                "id": 7033,
+                "id": 7139,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "353:7:41",
@@ -18719,23 +18719,23 @@
               "nodeType": "Mapping",
               "src": "345:34:41",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7032_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7138_storage_$",
                 "typeString": "mapping(uint256 => struct CoolingNFT.CoolingDetails)"
               },
               "valueType": {
-                "id": 7035,
+                "id": 7141,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7034,
+                  "id": 7140,
                   "name": "CoolingDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7032,
+                  "referencedDeclaration": 7138,
                   "src": "364:14:41"
                 },
-                "referencedDeclaration": 7032,
+                "referencedDeclaration": 7138,
                 "src": "364:14:41",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_CoolingDetails_$7032_storage_ptr",
+                  "typeIdentifier": "t_struct$_CoolingDetails_$7138_storage_ptr",
                   "typeString": "struct CoolingNFT.CoolingDetails"
                 }
               }
@@ -18744,23 +18744,23 @@
           },
           {
             "body": {
-              "id": 7045,
+              "id": 7151,
               "nodeType": "Block",
               "src": "460:2:41",
               "statements": []
             },
-            "id": 7046,
+            "id": 7152,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7042,
+                    "id": 7148,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7039,
+                    "referencedDeclaration": 7145,
                     "src": "454:4:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -18768,13 +18768,13 @@
                     }
                   }
                 ],
-                "id": 7043,
+                "id": 7149,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7041,
+                  "id": 7147,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7632,
+                  "referencedDeclaration": 7738,
                   "src": "440:13:41"
                 },
                 "nodeType": "ModifierInvocation",
@@ -18785,17 +18785,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7040,
+              "id": 7146,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7039,
+                  "id": 7145,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "434:4:41",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7046,
+                  "scope": 7152,
                   "src": "420:18:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18804,7 +18804,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7038,
+                    "id": 7144,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "420:6:41",
@@ -18819,12 +18819,12 @@
               "src": "419:20:41"
             },
             "returnParameters": {
-              "id": 7044,
+              "id": 7150,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "460:0:41"
             },
-            "scope": 7092,
+            "scope": 7198,
             "src": "408:54:41",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -18832,71 +18832,71 @@
           },
           {
             "body": {
-              "id": 7084,
+              "id": 7190,
               "nodeType": "Block",
               "src": "712:392:41",
               "statements": [
                 {
                   "assignments": [
-                    7065
+                    7171
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7065,
+                      "id": 7171,
                       "mutability": "mutable",
                       "name": "coolingDetailsByTokenId",
                       "nameLocation": "744:23:41",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7084,
+                      "scope": 7190,
                       "src": "722:45:41",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                        "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                         "typeString": "struct CoolingNFT.CoolingDetails"
                       },
                       "typeName": {
-                        "id": 7064,
+                        "id": 7170,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7063,
+                          "id": 7169,
                           "name": "CoolingDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7032,
+                          "referencedDeclaration": 7138,
                           "src": "722:14:41"
                         },
-                        "referencedDeclaration": 7032,
+                        "referencedDeclaration": 7138,
                         "src": "722:14:41",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_CoolingDetails_$7032_storage_ptr",
+                          "typeIdentifier": "t_struct$_CoolingDetails_$7138_storage_ptr",
                           "typeString": "struct CoolingNFT.CoolingDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7069,
+                  "id": 7175,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7066,
+                      "id": 7172,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7037,
+                      "referencedDeclaration": 7143,
                       "src": "770:13:41",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7032_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7138_storage_$",
                         "typeString": "mapping(uint256 => struct CoolingNFT.CoolingDetails storage ref)"
                       }
                     },
-                    "id": 7068,
+                    "id": 7174,
                     "indexExpression": {
-                      "id": 7067,
+                      "id": 7173,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7048,
+                      "referencedDeclaration": 7154,
                       "src": "784:2:41",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -18910,7 +18910,7 @@
                     "nodeType": "IndexAccess",
                     "src": "770:17:41",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_CoolingDetails_$7032_storage",
+                      "typeIdentifier": "t_struct$_CoolingDetails_$7138_storage",
                       "typeString": "struct CoolingNFT.CoolingDetails storage ref"
                     }
                   },
@@ -18922,25 +18922,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7070,
+                          "id": 7176,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "818:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7071,
+                        "id": 7177,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "fanSpeed",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7021,
+                        "referencedDeclaration": 7127,
                         "src": "818:32:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -18949,25 +18949,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7072,
+                          "id": 7178,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "864:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7073,
+                        "id": 7179,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "fanCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7023,
+                        "referencedDeclaration": 7129,
                         "src": "864:32:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -18976,25 +18976,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7074,
+                          "id": 7180,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "910:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7075,
+                        "id": 7181,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "coolerType",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7025,
+                        "referencedDeclaration": 7131,
                         "src": "910:34:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19003,25 +19003,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7076,
+                          "id": 7182,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "958:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7077,
+                        "id": 7183,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "coolantType",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7027,
+                        "referencedDeclaration": 7133,
                         "src": "958:35:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19030,25 +19030,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7078,
+                          "id": 7184,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "1007:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7079,
+                        "id": 7185,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "coolingMethod",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7029,
+                        "referencedDeclaration": 7135,
                         "src": "1007:37:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19057,25 +19057,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7080,
+                          "id": 7186,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "1058:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7081,
+                        "id": 7187,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7031,
+                        "referencedDeclaration": 7137,
                         "src": "1058:29:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19083,7 +19083,7 @@
                         }
                       }
                     ],
-                    "id": 7082,
+                    "id": 7188,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -19096,15 +19096,15 @@
                       "typeString": "tuple(uint256,uint8,string memory,string memory,string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7062,
-                  "id": 7083,
+                  "functionReturnParameters": 7168,
+                  "id": 7189,
                   "nodeType": "Return",
                   "src": "797:300:41"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7085,
+            "id": 7191,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -19112,17 +19112,17 @@
             "nameLocation": "477:15:41",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7049,
+              "id": 7155,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7048,
+                  "id": 7154,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "501:2:41",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "493:10:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19131,7 +19131,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7047,
+                    "id": 7153,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "493:7:41",
@@ -19146,17 +19146,17 @@
               "src": "492:12:41"
             },
             "returnParameters": {
-              "id": 7062,
+              "id": 7168,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7051,
+                  "id": 7157,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "563:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19165,7 +19165,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7050,
+                    "id": 7156,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "563:7:41",
@@ -19178,12 +19178,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7053,
+                  "id": 7159,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "584:5:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19192,7 +19192,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7052,
+                    "id": 7158,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "584:5:41",
@@ -19205,12 +19205,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7055,
+                  "id": 7161,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "603:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19219,7 +19219,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7054,
+                    "id": 7160,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "603:6:41",
@@ -19232,12 +19232,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7057,
+                  "id": 7163,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "630:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19246,7 +19246,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7056,
+                    "id": 7162,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "630:6:41",
@@ -19259,12 +19259,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7059,
+                  "id": 7165,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "657:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19273,7 +19273,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7058,
+                    "id": 7164,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "657:6:41",
@@ -19286,12 +19286,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7061,
+                  "id": 7167,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "684:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19300,7 +19300,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7060,
+                    "id": 7166,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "684:6:41",
@@ -19314,7 +19314,7 @@
               ],
               "src": "549:158:41"
             },
-            "scope": 7092,
+            "scope": 7198,
             "src": "468:636:41",
             "stateMutability": "view",
             "virtual": false,
@@ -19322,21 +19322,21 @@
           },
           {
             "body": {
-              "id": 7090,
+              "id": 7196,
               "nodeType": "Block",
               "src": "1154:2:41",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7091,
+            "id": 7197,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7088,
+                "id": 7194,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7087,
+                  "id": 7193,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -19350,25 +19350,25 @@
             "nameLocation": "1119:15:41",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7086,
+              "id": 7192,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1134:2:41"
             },
             "returnParameters": {
-              "id": 7089,
+              "id": 7195,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1154:0:41"
             },
-            "scope": 7092,
+            "scope": 7198,
             "src": "1110:46:41",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7093,
+        "scope": 7199,
         "src": "110:1048:41",
         "usedErrors": []
       }
@@ -19385,7 +19385,7 @@
         4931
       ],
       "CoolingNFT": [
-        7092
+        7198
       ],
       "ERC1155": [
         1354
@@ -19394,7 +19394,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7632
+        7738
       ],
       "ERC1155Supply": [
         1719
@@ -19421,12 +19421,12 @@
         258
       ]
     },
-    "id": 7093,
+    "id": 7199,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7016,
+        "id": 7122,
         "literals": [
           "solidity",
           "^",
@@ -19439,11 +19439,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7017,
+        "id": 7123,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7093,
-        "sourceUnit": 7633,
+        "scope": 7199,
+        "sourceUnit": 7739,
         "src": "71:37:41",
         "symbolAliases": [],
         "unitAlias": ""
@@ -19453,13 +19453,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7018,
+              "id": 7124,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7632,
+              "referencedDeclaration": 7738,
               "src": "133:13:41"
             },
-            "id": 7019,
+            "id": 7125,
             "nodeType": "InheritanceSpecifier",
             "src": "133:13:41"
           }
@@ -19468,10 +19468,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7092,
+        "id": 7198,
         "linearizedBaseContracts": [
-          7092,
-          7632,
+          7198,
+          7738,
           1719,
           1586,
           258,
@@ -19489,16 +19489,16 @@
         "nodes": [
           {
             "canonicalName": "CoolingNFT.CoolingDetails",
-            "id": 7032,
+            "id": 7138,
             "members": [
               {
                 "constant": false,
-                "id": 7021,
+                "id": 7127,
                 "mutability": "mutable",
                 "name": "fanSpeed",
                 "nameLocation": "193:8:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "185:16:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19507,7 +19507,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7020,
+                  "id": 7126,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "185:7:41",
@@ -19520,12 +19520,12 @@
               },
               {
                 "constant": false,
-                "id": 7023,
+                "id": 7129,
                 "mutability": "mutable",
                 "name": "fanCount",
                 "nameLocation": "217:8:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "211:14:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19534,7 +19534,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7022,
+                  "id": 7128,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "211:5:41",
@@ -19547,12 +19547,12 @@
               },
               {
                 "constant": false,
-                "id": 7025,
+                "id": 7131,
                 "mutability": "mutable",
                 "name": "coolerType",
                 "nameLocation": "242:10:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "235:17:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19561,7 +19561,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7024,
+                  "id": 7130,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "235:6:41",
@@ -19574,12 +19574,12 @@
               },
               {
                 "constant": false,
-                "id": 7027,
+                "id": 7133,
                 "mutability": "mutable",
                 "name": "coolantType",
                 "nameLocation": "269:11:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "262:18:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19588,7 +19588,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7026,
+                  "id": 7132,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "262:6:41",
@@ -19601,12 +19601,12 @@
               },
               {
                 "constant": false,
-                "id": 7029,
+                "id": 7135,
                 "mutability": "mutable",
                 "name": "coolingMethod",
                 "nameLocation": "297:13:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "290:20:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19615,7 +19615,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7028,
+                  "id": 7134,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "290:6:41",
@@ -19628,12 +19628,12 @@
               },
               {
                 "constant": false,
-                "id": 7031,
+                "id": 7137,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "327:5:41",
                 "nodeType": "VariableDeclaration",
-                "scope": 7032,
+                "scope": 7138,
                 "src": "320:12:41",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19642,7 +19642,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7030,
+                  "id": 7136,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "320:6:41",
@@ -19657,29 +19657,29 @@
             "name": "CoolingDetails",
             "nameLocation": "160:14:41",
             "nodeType": "StructDefinition",
-            "scope": 7092,
+            "scope": 7198,
             "src": "153:186:41",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7037,
+            "id": 7143,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "388:13:41",
             "nodeType": "VariableDeclaration",
-            "scope": 7092,
+            "scope": 7198,
             "src": "345:56:41",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7032_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7138_storage_$",
               "typeString": "mapping(uint256 => struct CoolingNFT.CoolingDetails)"
             },
             "typeName": {
-              "id": 7036,
+              "id": 7142,
               "keyType": {
-                "id": 7033,
+                "id": 7139,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "353:7:41",
@@ -19691,23 +19691,23 @@
               "nodeType": "Mapping",
               "src": "345:34:41",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7032_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7138_storage_$",
                 "typeString": "mapping(uint256 => struct CoolingNFT.CoolingDetails)"
               },
               "valueType": {
-                "id": 7035,
+                "id": 7141,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7034,
+                  "id": 7140,
                   "name": "CoolingDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7032,
+                  "referencedDeclaration": 7138,
                   "src": "364:14:41"
                 },
-                "referencedDeclaration": 7032,
+                "referencedDeclaration": 7138,
                 "src": "364:14:41",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_CoolingDetails_$7032_storage_ptr",
+                  "typeIdentifier": "t_struct$_CoolingDetails_$7138_storage_ptr",
                   "typeString": "struct CoolingNFT.CoolingDetails"
                 }
               }
@@ -19716,23 +19716,23 @@
           },
           {
             "body": {
-              "id": 7045,
+              "id": 7151,
               "nodeType": "Block",
               "src": "460:2:41",
               "statements": []
             },
-            "id": 7046,
+            "id": 7152,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7042,
+                    "id": 7148,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7039,
+                    "referencedDeclaration": 7145,
                     "src": "454:4:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -19740,13 +19740,13 @@
                     }
                   }
                 ],
-                "id": 7043,
+                "id": 7149,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7041,
+                  "id": 7147,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7632,
+                  "referencedDeclaration": 7738,
                   "src": "440:13:41"
                 },
                 "nodeType": "ModifierInvocation",
@@ -19757,17 +19757,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7040,
+              "id": 7146,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7039,
+                  "id": 7145,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "434:4:41",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7046,
+                  "scope": 7152,
                   "src": "420:18:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19776,7 +19776,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7038,
+                    "id": 7144,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "420:6:41",
@@ -19791,12 +19791,12 @@
               "src": "419:20:41"
             },
             "returnParameters": {
-              "id": 7044,
+              "id": 7150,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "460:0:41"
             },
-            "scope": 7092,
+            "scope": 7198,
             "src": "408:54:41",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -19804,71 +19804,71 @@
           },
           {
             "body": {
-              "id": 7084,
+              "id": 7190,
               "nodeType": "Block",
               "src": "712:392:41",
               "statements": [
                 {
                   "assignments": [
-                    7065
+                    7171
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7065,
+                      "id": 7171,
                       "mutability": "mutable",
                       "name": "coolingDetailsByTokenId",
                       "nameLocation": "744:23:41",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7084,
+                      "scope": 7190,
                       "src": "722:45:41",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                        "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                         "typeString": "struct CoolingNFT.CoolingDetails"
                       },
                       "typeName": {
-                        "id": 7064,
+                        "id": 7170,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7063,
+                          "id": 7169,
                           "name": "CoolingDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7032,
+                          "referencedDeclaration": 7138,
                           "src": "722:14:41"
                         },
-                        "referencedDeclaration": 7032,
+                        "referencedDeclaration": 7138,
                         "src": "722:14:41",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_CoolingDetails_$7032_storage_ptr",
+                          "typeIdentifier": "t_struct$_CoolingDetails_$7138_storage_ptr",
                           "typeString": "struct CoolingNFT.CoolingDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7069,
+                  "id": 7175,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7066,
+                      "id": 7172,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7037,
+                      "referencedDeclaration": 7143,
                       "src": "770:13:41",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7032_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_CoolingDetails_$7138_storage_$",
                         "typeString": "mapping(uint256 => struct CoolingNFT.CoolingDetails storage ref)"
                       }
                     },
-                    "id": 7068,
+                    "id": 7174,
                     "indexExpression": {
-                      "id": 7067,
+                      "id": 7173,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7048,
+                      "referencedDeclaration": 7154,
                       "src": "784:2:41",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -19882,7 +19882,7 @@
                     "nodeType": "IndexAccess",
                     "src": "770:17:41",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_CoolingDetails_$7032_storage",
+                      "typeIdentifier": "t_struct$_CoolingDetails_$7138_storage",
                       "typeString": "struct CoolingNFT.CoolingDetails storage ref"
                     }
                   },
@@ -19894,25 +19894,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7070,
+                          "id": 7176,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "818:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7071,
+                        "id": 7177,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "fanSpeed",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7021,
+                        "referencedDeclaration": 7127,
                         "src": "818:32:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -19921,25 +19921,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7072,
+                          "id": 7178,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "864:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7073,
+                        "id": 7179,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "fanCount",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7023,
+                        "referencedDeclaration": 7129,
                         "src": "864:32:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -19948,25 +19948,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7074,
+                          "id": 7180,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "910:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7075,
+                        "id": 7181,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "coolerType",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7025,
+                        "referencedDeclaration": 7131,
                         "src": "910:34:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19975,25 +19975,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7076,
+                          "id": 7182,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "958:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7077,
+                        "id": 7183,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "coolantType",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7027,
+                        "referencedDeclaration": 7133,
                         "src": "958:35:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -20002,25 +20002,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7078,
+                          "id": 7184,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "1007:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7079,
+                        "id": 7185,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "coolingMethod",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7029,
+                        "referencedDeclaration": 7135,
                         "src": "1007:37:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -20029,25 +20029,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7080,
+                          "id": 7186,
                           "name": "coolingDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7065,
+                          "referencedDeclaration": 7171,
                           "src": "1058:23:41",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_CoolingDetails_$7032_memory_ptr",
+                            "typeIdentifier": "t_struct$_CoolingDetails_$7138_memory_ptr",
                             "typeString": "struct CoolingNFT.CoolingDetails memory"
                           }
                         },
-                        "id": 7081,
+                        "id": 7187,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7031,
+                        "referencedDeclaration": 7137,
                         "src": "1058:29:41",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -20055,7 +20055,7 @@
                         }
                       }
                     ],
-                    "id": 7082,
+                    "id": 7188,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -20068,15 +20068,15 @@
                       "typeString": "tuple(uint256,uint8,string memory,string memory,string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7062,
-                  "id": 7083,
+                  "functionReturnParameters": 7168,
+                  "id": 7189,
                   "nodeType": "Return",
                   "src": "797:300:41"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7085,
+            "id": 7191,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -20084,17 +20084,17 @@
             "nameLocation": "477:15:41",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7049,
+              "id": 7155,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7048,
+                  "id": 7154,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "501:2:41",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "493:10:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20103,7 +20103,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7047,
+                    "id": 7153,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "493:7:41",
@@ -20118,17 +20118,17 @@
               "src": "492:12:41"
             },
             "returnParameters": {
-              "id": 7062,
+              "id": 7168,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7051,
+                  "id": 7157,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "563:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20137,7 +20137,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7050,
+                    "id": 7156,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "563:7:41",
@@ -20150,12 +20150,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7053,
+                  "id": 7159,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "584:5:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20164,7 +20164,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7052,
+                    "id": 7158,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "584:5:41",
@@ -20177,12 +20177,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7055,
+                  "id": 7161,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "603:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -20191,7 +20191,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7054,
+                    "id": 7160,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "603:6:41",
@@ -20204,12 +20204,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7057,
+                  "id": 7163,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "630:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -20218,7 +20218,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7056,
+                    "id": 7162,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "630:6:41",
@@ -20231,12 +20231,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7059,
+                  "id": 7165,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "657:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -20245,7 +20245,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7058,
+                    "id": 7164,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "657:6:41",
@@ -20258,12 +20258,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7061,
+                  "id": 7167,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7085,
+                  "scope": 7191,
                   "src": "684:13:41",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -20272,7 +20272,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7060,
+                    "id": 7166,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "684:6:41",
@@ -20286,7 +20286,7 @@
               ],
               "src": "549:158:41"
             },
-            "scope": 7092,
+            "scope": 7198,
             "src": "468:636:41",
             "stateMutability": "view",
             "virtual": false,
@@ -20294,21 +20294,21 @@
           },
           {
             "body": {
-              "id": 7090,
+              "id": 7196,
               "nodeType": "Block",
               "src": "1154:2:41",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7091,
+            "id": 7197,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7088,
+                "id": 7194,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7087,
+                  "id": 7193,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -20322,25 +20322,25 @@
             "nameLocation": "1119:15:41",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7086,
+              "id": 7192,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1134:2:41"
             },
             "returnParameters": {
-              "id": 7089,
+              "id": 7195,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1154:0:41"
             },
-            "scope": 7092,
+            "scope": 7198,
             "src": "1110:46:41",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7093,
+        "scope": 7199,
         "src": "110:1048:41",
         "usedErrors": []
       }
@@ -20353,7 +20353,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-08T17:12:57.613Z",
+  "updatedAt": "2022-01-09T14:24:30.021Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

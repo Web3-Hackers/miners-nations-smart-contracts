@@ -193,9 +193,17 @@ contract("MINE Token", (accounts) => {
    * - Should enable set maximum ownership percentage feature to be disabled (100% maximum ownership allowed)
    * - Should disable set maximum ownership percentage with 0 value
    * - Should disable set maximum ownership percentage with > 100% value
+   * - Should enable increase maximum ownership percentage the owner
+   * - Should disable increase maximum ownership percentage non-owners
+   * - Should disable increase maximum ownership with 0 value
+   * - Should disable increase maximum ownership when the new max ownership total exceeds 100%
+   * - Should enable decrease maximum ownership percentage for the owner
+   * - Should disable decrease maximum ownership percentage for non-owners
+   * - Should disable decrease maximum ownership with 0 value
+   * - Should disable decrease maximum ownership with value larger than current maximum ownership percentage
    */
   describe("Token Maximum Ownership", () => {
-    it("Should enable set maximum ownership percentage for owners", async () => {
+    it("Should enable set maximum ownership percentage for the owner", async () => {
       expect(parseInt(await this.mine.maxOwnership())).to.equal(20000);
 
       await this.mine.setMaxOwnership(30000, { from: accounts[0] });
@@ -232,13 +240,76 @@ contract("MINE Token", (accounts) => {
         "MINE: New Max Ownership Percentage must be larger than 0 or at most 100% (5 decimals)"
       );
     });
+
+    it("Should enable increase maximum ownership percentage for the owner", async () => {
+      // Increase Maximum Ownership by 20%
+      await this.mine.increaseMaxOwnership(20000, { from: accounts[0] });
+
+      expect(parseInt(await this.mine.maxOwnership())).to.equal(40000);
+    });
+
+    it("Should disable increase maximum ownership percentage for non-owners", async () => {
+      // Increase Maximum Ownership by 20%
+      expectRevert(
+        this.mine.increaseMaxOwnership(20000, { from: accounts[1] }),
+        "Ownable: caller is not the owner"
+      );
+    });
+
+    it("Should disable increase maximum ownership with 0 value", async () => {
+      expectRevert(
+        this.mine.increaseMaxOwnership(0, { from: accounts[0] }),
+        "MINE: Increased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
+      );
+    });
+
+    it("Should disable increase maximum ownership when the new max ownership total exceeds 100%", async () => {
+      // By default, the maximum ownership is 20%
+      // By increasing it by 81%, it should exceed 100% which will revert
+      expectRevert(
+        this.mine.increaseMaxOwnership(81000, { from: accounts[0] }),
+        "MINE: Increased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
+      );
+    });
+
+    it("Should enable decrease maximum ownership percentage for the owner", async () => {
+      // Decrease Maximum Ownership by 1%
+      await this.mine.decreaseMaxOwnership(1000, { from: accounts[0] });
+
+      expect(parseInt(await this.mine.maxOwnership())).to.equal(19000);
+    });
+
+    it("Should disable decrease maximum ownership percentage for non-owners", async () => {
+      // Decrease Maximum Ownership by 1%
+      expectRevert(
+        this.mine.decreaseMaxOwnership(1000, { from: accounts[1] }),
+        "Ownable: caller is not the owner"
+      );
+    });
+
+    it("Should disable decrease maximum ownership with 0 value", async () => {
+      expectRevert(
+        this.mine.decreaseMaxOwnership(0, { from: accounts[0] }),
+        "MINE: Decreased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
+      );
+    });
+
+    it("Should disable decrease maximum ownership with value larger than current maximum ownership percentage", async () => {
+      expectRevert(
+        // Decrease maximum ownership by 21% (> 20%)
+        this.mine.decreaseMaxOwnership(21000, { from: accounts[0] }),
+        "MINE: Decreased Max Ownership should be less than Current Max Ownership."
+      );
+    });
   });
 
   /**
    * Testing Token Transfer with Maximum Ownership Feature:
    * - Should only allow token transfer it it is less than or equal to the maximum ownership percentage
+   * - Should enable transfer larger than 20% of totaly supply after increasing maximum ownership
    * - Should unallow token transfer if it is larger than maximum ownership percentage
-   * - Should disable transfer for wallet with balance larger than the decreased maximum ownership percentage
+   * - Should disable transfer for wallet with balance larger than the decreased maximum ownership percentage (setMaxOwnership)
+   * - Should disable transfer for wallet with balance larger than the decreased maximum ownership percentage (increaseMaxOwnership)
    */
   describe("Token Transfer with Maximum Ownership Restriction", () => {
     it("Should enable transfer to address with less than or equal to the maximum ownership", async () => {
@@ -249,6 +320,19 @@ contract("MINE Token", (accounts) => {
       });
 
       expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(4e27);
+    });
+
+    it("Should enable transfer larger than 20% of totaly supply after increasing maximum ownership", async () => {
+      // 25% of 20 billion, hardcoded at the moment
+      const transferAmount = "5000000000000000000000000000";
+
+      await this.mine.increaseMaxOwnership(5000, { from: accounts[0] });
+
+      await this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
+        from: accounts[0],
+      });
+
+      expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(5e27);
     });
 
     it("Should disable transfer to address with larger than the maximum ownership", async () => {
@@ -264,7 +348,35 @@ contract("MINE Token", (accounts) => {
       );
     });
 
-    it("Should disable transfer for wallet with balance larger than the decreased maximum ownership percentage", async () => {});
+    it("Should disable transfer for wallet with balance larger than the decreased maximum ownership percentage (setMaxOwnership)", async () => {
+      // 20% of 20 billion, hardcoded at the moment
+      const transferAmount = "4000000000000000000000000000";
+
+      await this.mine.setMaxOwnership(15000, { from: accounts[0] });
+
+      expectRevert(
+        // Send 20% of the total existing supply, but max ownership changed to 15% (SHOULD FAIL)
+        this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
+          from: accounts[0],
+        }),
+        "MINE: End balance exceeding the maximum ownership percentage of total supply is prohibited!"
+      );
+    });
+
+    it("Should disable transfer for wallet with balance larger than the decreased maximum ownership percentage (increaseMaxOwnership)", async () => {
+      // 20% of 20 billion, hardcoded at the moment
+      const transferAmount = "4000000000000000000000000000";
+
+      await this.mine.decreaseMaxOwnership(5000, { from: accounts[0] });
+
+      expectRevert(
+        // Send 20% of the total existing supply, but max ownership changed to 15% (SHOULD FAIL)
+        this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
+          from: accounts[0],
+        }),
+        "MINE: End balance exceeding the maximum ownership percentage of total supply is prohibited!"
+      );
+    });
   });
 
   /**

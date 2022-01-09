@@ -18110,7 +18110,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7632
+        7738
       ],
       "ERC1155Supply": [
         1719
@@ -18137,15 +18137,15 @@
         258
       ],
       "RAMNFT": [
-        7416
+        7522
       ]
     },
-    "id": 7417,
+    "id": 7523,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7358,
+        "id": 7464,
         "literals": [
           "solidity",
           "^",
@@ -18158,11 +18158,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7359,
+        "id": 7465,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7417,
-        "sourceUnit": 7633,
+        "scope": 7523,
+        "sourceUnit": 7739,
         "src": "71:37:46",
         "symbolAliases": [],
         "unitAlias": ""
@@ -18172,13 +18172,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7360,
+              "id": 7466,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7632,
+              "referencedDeclaration": 7738,
               "src": "129:13:46"
             },
-            "id": 7361,
+            "id": 7467,
             "nodeType": "InheritanceSpecifier",
             "src": "129:13:46"
           }
@@ -18187,10 +18187,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7416,
+        "id": 7522,
         "linearizedBaseContracts": [
-          7416,
-          7632,
+          7522,
+          7738,
           1719,
           1586,
           258,
@@ -18208,16 +18208,16 @@
         "nodes": [
           {
             "canonicalName": "RAMNFT.RAMDetails",
-            "id": 7368,
+            "id": 7474,
             "members": [
               {
                 "constant": false,
-                "id": 7363,
+                "id": 7469,
                 "mutability": "mutable",
                 "name": "clockSpeed",
                 "nameLocation": "185:10:46",
                 "nodeType": "VariableDeclaration",
-                "scope": 7368,
+                "scope": 7474,
                 "src": "177:18:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18226,7 +18226,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7362,
+                  "id": 7468,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "177:7:46",
@@ -18239,12 +18239,12 @@
               },
               {
                 "constant": false,
-                "id": 7365,
+                "id": 7471,
                 "mutability": "mutable",
                 "name": "storageSpace",
                 "nameLocation": "211:12:46",
                 "nodeType": "VariableDeclaration",
-                "scope": 7368,
+                "scope": 7474,
                 "src": "205:18:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18253,7 +18253,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7364,
+                  "id": 7470,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "205:5:46",
@@ -18266,12 +18266,12 @@
               },
               {
                 "constant": false,
-                "id": 7367,
+                "id": 7473,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "240:5:46",
                 "nodeType": "VariableDeclaration",
-                "scope": 7368,
+                "scope": 7474,
                 "src": "233:12:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18280,7 +18280,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7366,
+                  "id": 7472,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "233:6:46",
@@ -18295,29 +18295,29 @@
             "name": "RAMDetails",
             "nameLocation": "156:10:46",
             "nodeType": "StructDefinition",
-            "scope": 7416,
+            "scope": 7522,
             "src": "149:103:46",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7373,
+            "id": 7479,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "297:13:46",
             "nodeType": "VariableDeclaration",
-            "scope": 7416,
+            "scope": 7522,
             "src": "258:52:46",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7368_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7474_storage_$",
               "typeString": "mapping(uint256 => struct RAMNFT.RAMDetails)"
             },
             "typeName": {
-              "id": 7372,
+              "id": 7478,
               "keyType": {
-                "id": 7369,
+                "id": 7475,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "266:7:46",
@@ -18329,23 +18329,23 @@
               "nodeType": "Mapping",
               "src": "258:30:46",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7368_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7474_storage_$",
                 "typeString": "mapping(uint256 => struct RAMNFT.RAMDetails)"
               },
               "valueType": {
-                "id": 7371,
+                "id": 7477,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7370,
+                  "id": 7476,
                   "name": "RAMDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7368,
+                  "referencedDeclaration": 7474,
                   "src": "277:10:46"
                 },
-                "referencedDeclaration": 7368,
+                "referencedDeclaration": 7474,
                 "src": "277:10:46",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_RAMDetails_$7368_storage_ptr",
+                  "typeIdentifier": "t_struct$_RAMDetails_$7474_storage_ptr",
                   "typeString": "struct RAMNFT.RAMDetails"
                 }
               }
@@ -18354,23 +18354,23 @@
           },
           {
             "body": {
-              "id": 7381,
+              "id": 7487,
               "nodeType": "Block",
               "src": "369:2:46",
               "statements": []
             },
-            "id": 7382,
+            "id": 7488,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7378,
+                    "id": 7484,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7375,
+                    "referencedDeclaration": 7481,
                     "src": "363:4:46",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -18378,13 +18378,13 @@
                     }
                   }
                 ],
-                "id": 7379,
+                "id": 7485,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7377,
+                  "id": 7483,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7632,
+                  "referencedDeclaration": 7738,
                   "src": "349:13:46"
                 },
                 "nodeType": "ModifierInvocation",
@@ -18395,17 +18395,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7376,
+              "id": 7482,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7375,
+                  "id": 7481,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "343:4:46",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7382,
+                  "scope": 7488,
                   "src": "329:18:46",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18414,7 +18414,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7374,
+                    "id": 7480,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:6:46",
@@ -18429,12 +18429,12 @@
               "src": "328:20:46"
             },
             "returnParameters": {
-              "id": 7380,
+              "id": 7486,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "369:0:46"
             },
-            "scope": 7416,
+            "scope": 7522,
             "src": "317:54:46",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -18442,71 +18442,71 @@
           },
           {
             "body": {
-              "id": 7408,
+              "id": 7514,
               "nodeType": "Block",
               "src": "540:230:46",
               "statements": [
                 {
                   "assignments": [
-                    7395
+                    7501
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7395,
+                      "id": 7501,
                       "mutability": "mutable",
                       "name": "ramDetailsByTokenId",
                       "nameLocation": "568:19:46",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7408,
+                      "scope": 7514,
                       "src": "550:37:46",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                        "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                         "typeString": "struct RAMNFT.RAMDetails"
                       },
                       "typeName": {
-                        "id": 7394,
+                        "id": 7500,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7393,
+                          "id": 7499,
                           "name": "RAMDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7368,
+                          "referencedDeclaration": 7474,
                           "src": "550:10:46"
                         },
-                        "referencedDeclaration": 7368,
+                        "referencedDeclaration": 7474,
                         "src": "550:10:46",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RAMDetails_$7368_storage_ptr",
+                          "typeIdentifier": "t_struct$_RAMDetails_$7474_storage_ptr",
                           "typeString": "struct RAMNFT.RAMDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7399,
+                  "id": 7505,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7396,
+                      "id": 7502,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7373,
+                      "referencedDeclaration": 7479,
                       "src": "590:13:46",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7368_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7474_storage_$",
                         "typeString": "mapping(uint256 => struct RAMNFT.RAMDetails storage ref)"
                       }
                     },
-                    "id": 7398,
+                    "id": 7504,
                     "indexExpression": {
-                      "id": 7397,
+                      "id": 7503,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7384,
+                      "referencedDeclaration": 7490,
                       "src": "604:2:46",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -18520,7 +18520,7 @@
                     "nodeType": "IndexAccess",
                     "src": "590:17:46",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RAMDetails_$7368_storage",
+                      "typeIdentifier": "t_struct$_RAMDetails_$7474_storage",
                       "typeString": "struct RAMNFT.RAMDetails storage ref"
                     }
                   },
@@ -18532,25 +18532,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7400,
+                          "id": 7506,
                           "name": "ramDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7395,
+                          "referencedDeclaration": 7501,
                           "src": "638:19:46",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                            "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                             "typeString": "struct RAMNFT.RAMDetails memory"
                           }
                         },
-                        "id": 7401,
+                        "id": 7507,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "clockSpeed",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7363,
+                        "referencedDeclaration": 7469,
                         "src": "638:30:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -18559,25 +18559,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7402,
+                          "id": 7508,
                           "name": "ramDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7395,
+                          "referencedDeclaration": 7501,
                           "src": "682:19:46",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                            "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                             "typeString": "struct RAMNFT.RAMDetails memory"
                           }
                         },
-                        "id": 7403,
+                        "id": 7509,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "storageSpace",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7365,
+                        "referencedDeclaration": 7471,
                         "src": "682:32:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -18586,25 +18586,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7404,
+                          "id": 7510,
                           "name": "ramDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7395,
+                          "referencedDeclaration": 7501,
                           "src": "728:19:46",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                            "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                             "typeString": "struct RAMNFT.RAMDetails memory"
                           }
                         },
-                        "id": 7405,
+                        "id": 7511,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7367,
+                        "referencedDeclaration": 7473,
                         "src": "728:25:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -18612,7 +18612,7 @@
                         }
                       }
                     ],
-                    "id": 7406,
+                    "id": 7512,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -18625,15 +18625,15 @@
                       "typeString": "tuple(uint256,uint8,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7392,
-                  "id": 7407,
+                  "functionReturnParameters": 7498,
+                  "id": 7513,
                   "nodeType": "Return",
                   "src": "617:146:46"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7409,
+            "id": 7515,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -18641,17 +18641,17 @@
             "nameLocation": "386:15:46",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7385,
+              "id": 7491,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7384,
+                  "id": 7490,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "410:2:46",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "402:10:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -18660,7 +18660,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7383,
+                    "id": 7489,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "402:7:46",
@@ -18675,17 +18675,17 @@
               "src": "401:12:46"
             },
             "returnParameters": {
-              "id": 7392,
+              "id": 7498,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7387,
+                  "id": 7493,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "472:7:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -18694,7 +18694,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7386,
+                    "id": 7492,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "472:7:46",
@@ -18707,12 +18707,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7389,
+                  "id": 7495,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "493:5:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -18721,7 +18721,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7388,
+                    "id": 7494,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "493:5:46",
@@ -18734,12 +18734,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7391,
+                  "id": 7497,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "512:13:46",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18748,7 +18748,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7390,
+                    "id": 7496,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "512:6:46",
@@ -18762,7 +18762,7 @@
               ],
               "src": "458:77:46"
             },
-            "scope": 7416,
+            "scope": 7522,
             "src": "377:393:46",
             "stateMutability": "view",
             "virtual": false,
@@ -18770,21 +18770,21 @@
           },
           {
             "body": {
-              "id": 7414,
+              "id": 7520,
               "nodeType": "Block",
               "src": "820:2:46",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7415,
+            "id": 7521,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7412,
+                "id": 7518,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7411,
+                  "id": 7517,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -18798,25 +18798,25 @@
             "nameLocation": "785:15:46",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7410,
+              "id": 7516,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "800:2:46"
             },
             "returnParameters": {
-              "id": 7413,
+              "id": 7519,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "820:0:46"
             },
-            "scope": 7416,
+            "scope": 7522,
             "src": "776:46:46",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7417,
+        "scope": 7523,
         "src": "110:714:46",
         "usedErrors": []
       }
@@ -18839,7 +18839,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7632
+        7738
       ],
       "ERC1155Supply": [
         1719
@@ -18866,15 +18866,15 @@
         258
       ],
       "RAMNFT": [
-        7416
+        7522
       ]
     },
-    "id": 7417,
+    "id": 7523,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7358,
+        "id": 7464,
         "literals": [
           "solidity",
           "^",
@@ -18887,11 +18887,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7359,
+        "id": 7465,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7417,
-        "sourceUnit": 7633,
+        "scope": 7523,
+        "sourceUnit": 7739,
         "src": "71:37:46",
         "symbolAliases": [],
         "unitAlias": ""
@@ -18901,13 +18901,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7360,
+              "id": 7466,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7632,
+              "referencedDeclaration": 7738,
               "src": "129:13:46"
             },
-            "id": 7361,
+            "id": 7467,
             "nodeType": "InheritanceSpecifier",
             "src": "129:13:46"
           }
@@ -18916,10 +18916,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7416,
+        "id": 7522,
         "linearizedBaseContracts": [
-          7416,
-          7632,
+          7522,
+          7738,
           1719,
           1586,
           258,
@@ -18937,16 +18937,16 @@
         "nodes": [
           {
             "canonicalName": "RAMNFT.RAMDetails",
-            "id": 7368,
+            "id": 7474,
             "members": [
               {
                 "constant": false,
-                "id": 7363,
+                "id": 7469,
                 "mutability": "mutable",
                 "name": "clockSpeed",
                 "nameLocation": "185:10:46",
                 "nodeType": "VariableDeclaration",
-                "scope": 7368,
+                "scope": 7474,
                 "src": "177:18:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18955,7 +18955,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7362,
+                  "id": 7468,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "177:7:46",
@@ -18968,12 +18968,12 @@
               },
               {
                 "constant": false,
-                "id": 7365,
+                "id": 7471,
                 "mutability": "mutable",
                 "name": "storageSpace",
                 "nameLocation": "211:12:46",
                 "nodeType": "VariableDeclaration",
-                "scope": 7368,
+                "scope": 7474,
                 "src": "205:18:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18982,7 +18982,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7364,
+                  "id": 7470,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "205:5:46",
@@ -18995,12 +18995,12 @@
               },
               {
                 "constant": false,
-                "id": 7367,
+                "id": 7473,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "240:5:46",
                 "nodeType": "VariableDeclaration",
-                "scope": 7368,
+                "scope": 7474,
                 "src": "233:12:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19009,7 +19009,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7366,
+                  "id": 7472,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "233:6:46",
@@ -19024,29 +19024,29 @@
             "name": "RAMDetails",
             "nameLocation": "156:10:46",
             "nodeType": "StructDefinition",
-            "scope": 7416,
+            "scope": 7522,
             "src": "149:103:46",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7373,
+            "id": 7479,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "297:13:46",
             "nodeType": "VariableDeclaration",
-            "scope": 7416,
+            "scope": 7522,
             "src": "258:52:46",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7368_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7474_storage_$",
               "typeString": "mapping(uint256 => struct RAMNFT.RAMDetails)"
             },
             "typeName": {
-              "id": 7372,
+              "id": 7478,
               "keyType": {
-                "id": 7369,
+                "id": 7475,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "266:7:46",
@@ -19058,23 +19058,23 @@
               "nodeType": "Mapping",
               "src": "258:30:46",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7368_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7474_storage_$",
                 "typeString": "mapping(uint256 => struct RAMNFT.RAMDetails)"
               },
               "valueType": {
-                "id": 7371,
+                "id": 7477,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7370,
+                  "id": 7476,
                   "name": "RAMDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7368,
+                  "referencedDeclaration": 7474,
                   "src": "277:10:46"
                 },
-                "referencedDeclaration": 7368,
+                "referencedDeclaration": 7474,
                 "src": "277:10:46",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_RAMDetails_$7368_storage_ptr",
+                  "typeIdentifier": "t_struct$_RAMDetails_$7474_storage_ptr",
                   "typeString": "struct RAMNFT.RAMDetails"
                 }
               }
@@ -19083,23 +19083,23 @@
           },
           {
             "body": {
-              "id": 7381,
+              "id": 7487,
               "nodeType": "Block",
               "src": "369:2:46",
               "statements": []
             },
-            "id": 7382,
+            "id": 7488,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7378,
+                    "id": 7484,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7375,
+                    "referencedDeclaration": 7481,
                     "src": "363:4:46",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -19107,13 +19107,13 @@
                     }
                   }
                 ],
-                "id": 7379,
+                "id": 7485,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7377,
+                  "id": 7483,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7632,
+                  "referencedDeclaration": 7738,
                   "src": "349:13:46"
                 },
                 "nodeType": "ModifierInvocation",
@@ -19124,17 +19124,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7376,
+              "id": 7482,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7375,
+                  "id": 7481,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "343:4:46",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7382,
+                  "scope": 7488,
                   "src": "329:18:46",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19143,7 +19143,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7374,
+                    "id": 7480,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "329:6:46",
@@ -19158,12 +19158,12 @@
               "src": "328:20:46"
             },
             "returnParameters": {
-              "id": 7380,
+              "id": 7486,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "369:0:46"
             },
-            "scope": 7416,
+            "scope": 7522,
             "src": "317:54:46",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -19171,71 +19171,71 @@
           },
           {
             "body": {
-              "id": 7408,
+              "id": 7514,
               "nodeType": "Block",
               "src": "540:230:46",
               "statements": [
                 {
                   "assignments": [
-                    7395
+                    7501
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7395,
+                      "id": 7501,
                       "mutability": "mutable",
                       "name": "ramDetailsByTokenId",
                       "nameLocation": "568:19:46",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7408,
+                      "scope": 7514,
                       "src": "550:37:46",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                        "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                         "typeString": "struct RAMNFT.RAMDetails"
                       },
                       "typeName": {
-                        "id": 7394,
+                        "id": 7500,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7393,
+                          "id": 7499,
                           "name": "RAMDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7368,
+                          "referencedDeclaration": 7474,
                           "src": "550:10:46"
                         },
-                        "referencedDeclaration": 7368,
+                        "referencedDeclaration": 7474,
                         "src": "550:10:46",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RAMDetails_$7368_storage_ptr",
+                          "typeIdentifier": "t_struct$_RAMDetails_$7474_storage_ptr",
                           "typeString": "struct RAMNFT.RAMDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7399,
+                  "id": 7505,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7396,
+                      "id": 7502,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7373,
+                      "referencedDeclaration": 7479,
                       "src": "590:13:46",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7368_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RAMDetails_$7474_storage_$",
                         "typeString": "mapping(uint256 => struct RAMNFT.RAMDetails storage ref)"
                       }
                     },
-                    "id": 7398,
+                    "id": 7504,
                     "indexExpression": {
-                      "id": 7397,
+                      "id": 7503,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7384,
+                      "referencedDeclaration": 7490,
                       "src": "604:2:46",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -19249,7 +19249,7 @@
                     "nodeType": "IndexAccess",
                     "src": "590:17:46",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RAMDetails_$7368_storage",
+                      "typeIdentifier": "t_struct$_RAMDetails_$7474_storage",
                       "typeString": "struct RAMNFT.RAMDetails storage ref"
                     }
                   },
@@ -19261,25 +19261,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7400,
+                          "id": 7506,
                           "name": "ramDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7395,
+                          "referencedDeclaration": 7501,
                           "src": "638:19:46",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                            "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                             "typeString": "struct RAMNFT.RAMDetails memory"
                           }
                         },
-                        "id": 7401,
+                        "id": 7507,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "clockSpeed",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7363,
+                        "referencedDeclaration": 7469,
                         "src": "638:30:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -19288,25 +19288,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7402,
+                          "id": 7508,
                           "name": "ramDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7395,
+                          "referencedDeclaration": 7501,
                           "src": "682:19:46",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                            "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                             "typeString": "struct RAMNFT.RAMDetails memory"
                           }
                         },
-                        "id": 7403,
+                        "id": 7509,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "storageSpace",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7365,
+                        "referencedDeclaration": 7471,
                         "src": "682:32:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -19315,25 +19315,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7404,
+                          "id": 7510,
                           "name": "ramDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7395,
+                          "referencedDeclaration": 7501,
                           "src": "728:19:46",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RAMDetails_$7368_memory_ptr",
+                            "typeIdentifier": "t_struct$_RAMDetails_$7474_memory_ptr",
                             "typeString": "struct RAMNFT.RAMDetails memory"
                           }
                         },
-                        "id": 7405,
+                        "id": 7511,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7367,
+                        "referencedDeclaration": 7473,
                         "src": "728:25:46",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19341,7 +19341,7 @@
                         }
                       }
                     ],
-                    "id": 7406,
+                    "id": 7512,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -19354,15 +19354,15 @@
                       "typeString": "tuple(uint256,uint8,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7392,
-                  "id": 7407,
+                  "functionReturnParameters": 7498,
+                  "id": 7513,
                   "nodeType": "Return",
                   "src": "617:146:46"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7409,
+            "id": 7515,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -19370,17 +19370,17 @@
             "nameLocation": "386:15:46",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7385,
+              "id": 7491,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7384,
+                  "id": 7490,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "410:2:46",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "402:10:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19389,7 +19389,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7383,
+                    "id": 7489,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "402:7:46",
@@ -19404,17 +19404,17 @@
               "src": "401:12:46"
             },
             "returnParameters": {
-              "id": 7392,
+              "id": 7498,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7387,
+                  "id": 7493,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "472:7:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19423,7 +19423,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7386,
+                    "id": 7492,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "472:7:46",
@@ -19436,12 +19436,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7389,
+                  "id": 7495,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "493:5:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19450,7 +19450,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7388,
+                    "id": 7494,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "493:5:46",
@@ -19463,12 +19463,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7391,
+                  "id": 7497,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7409,
+                  "scope": 7515,
                   "src": "512:13:46",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19477,7 +19477,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7390,
+                    "id": 7496,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "512:6:46",
@@ -19491,7 +19491,7 @@
               ],
               "src": "458:77:46"
             },
-            "scope": 7416,
+            "scope": 7522,
             "src": "377:393:46",
             "stateMutability": "view",
             "virtual": false,
@@ -19499,21 +19499,21 @@
           },
           {
             "body": {
-              "id": 7414,
+              "id": 7520,
               "nodeType": "Block",
               "src": "820:2:46",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7415,
+            "id": 7521,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7412,
+                "id": 7518,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7411,
+                  "id": 7517,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -19527,25 +19527,25 @@
             "nameLocation": "785:15:46",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7410,
+              "id": 7516,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "800:2:46"
             },
             "returnParameters": {
-              "id": 7413,
+              "id": 7519,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "820:0:46"
             },
-            "scope": 7416,
+            "scope": 7522,
             "src": "776:46:46",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7417,
+        "scope": 7523,
         "src": "110:714:46",
         "usedErrors": []
       }
@@ -19558,7 +19558,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-08T17:12:57.636Z",
+  "updatedAt": "2022-01-09T14:24:30.045Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

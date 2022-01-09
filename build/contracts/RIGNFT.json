@@ -13667,7 +13667,7 @@
         4457
       ],
       "ERC721Custom": [
-        7858
+        8087
       ],
       "ERC721URIStorage": [
         4585
@@ -13691,18 +13691,18 @@
         258
       ],
       "RIGNFT": [
-        7497
+        7603
       ],
       "Strings": [
         5208
       ]
     },
-    "id": 7498,
+    "id": 7604,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7418,
+        "id": 7524,
         "literals": [
           "solidity",
           "^",
@@ -13715,11 +13715,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC721Custom.sol",
         "file": "../tokens/ERC721Custom.sol",
-        "id": 7419,
+        "id": 7525,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7498,
-        "sourceUnit": 7859,
+        "scope": 7604,
+        "sourceUnit": 8088,
         "src": "71:36:47",
         "symbolAliases": [],
         "unitAlias": ""
@@ -13729,13 +13729,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7420,
+              "id": 7526,
               "name": "ERC721Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7858,
+              "referencedDeclaration": 8087,
               "src": "128:12:47"
             },
-            "id": 7421,
+            "id": 7527,
             "nodeType": "InheritanceSpecifier",
             "src": "128:12:47"
           }
@@ -13744,10 +13744,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7497,
+        "id": 7603,
         "linearizedBaseContracts": [
-          7497,
-          7858,
+          7603,
+          8087,
           4457,
           104,
           258,
@@ -13765,16 +13765,16 @@
         "nodes": [
           {
             "canonicalName": "RIGNFT.RIGDetails",
-            "id": 7434,
+            "id": 7540,
             "members": [
               {
                 "constant": false,
-                "id": 7423,
+                "id": 7529,
                 "mutability": "mutable",
                 "name": "hashRate",
                 "nameLocation": "183:8:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "175:16:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -13783,7 +13783,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7422,
+                  "id": 7528,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "175:7:47",
@@ -13796,12 +13796,12 @@
               },
               {
                 "constant": false,
-                "id": 7425,
+                "id": 7531,
                 "mutability": "mutable",
                 "name": "gpuTemp",
                 "nameLocation": "207:7:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "201:13:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -13810,7 +13810,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7424,
+                  "id": 7530,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "201:5:47",
@@ -13823,12 +13823,12 @@
               },
               {
                 "constant": false,
-                "id": 7427,
+                "id": 7533,
                 "mutability": "mutable",
                 "name": "rigTemp",
                 "nameLocation": "230:7:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "224:13:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -13837,7 +13837,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7426,
+                  "id": 7532,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "224:5:47",
@@ -13850,12 +13850,12 @@
               },
               {
                 "constant": false,
-                "id": 7429,
+                "id": 7535,
                 "mutability": "mutable",
                 "name": "systemPowerLevel",
                 "nameLocation": "255:16:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "247:24:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -13864,7 +13864,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7428,
+                  "id": 7534,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "247:7:47",
@@ -13877,12 +13877,12 @@
               },
               {
                 "constant": false,
-                "id": 7431,
+                "id": 7537,
                 "mutability": "mutable",
                 "name": "minerOS",
                 "nameLocation": "288:7:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "281:14:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -13891,7 +13891,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7430,
+                  "id": 7536,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "281:6:47",
@@ -13904,12 +13904,12 @@
               },
               {
                 "constant": false,
-                "id": 7433,
+                "id": 7539,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "312:5:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "305:12:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -13918,7 +13918,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7432,
+                  "id": 7538,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "305:6:47",
@@ -13933,29 +13933,29 @@
             "name": "RIGDetails",
             "nameLocation": "154:10:47",
             "nodeType": "StructDefinition",
-            "scope": 7497,
+            "scope": 7603,
             "src": "147:177:47",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7439,
+            "id": 7545,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "369:13:47",
             "nodeType": "VariableDeclaration",
-            "scope": 7497,
+            "scope": 7603,
             "src": "330:52:47",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7434_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7540_storage_$",
               "typeString": "mapping(uint256 => struct RIGNFT.RIGDetails)"
             },
             "typeName": {
-              "id": 7438,
+              "id": 7544,
               "keyType": {
-                "id": 7435,
+                "id": 7541,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "338:7:47",
@@ -13967,23 +13967,23 @@
               "nodeType": "Mapping",
               "src": "330:30:47",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7434_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7540_storage_$",
                 "typeString": "mapping(uint256 => struct RIGNFT.RIGDetails)"
               },
               "valueType": {
-                "id": 7437,
+                "id": 7543,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7436,
+                  "id": 7542,
                   "name": "RIGDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7434,
+                  "referencedDeclaration": 7540,
                   "src": "349:10:47"
                 },
-                "referencedDeclaration": 7434,
+                "referencedDeclaration": 7540,
                 "src": "349:10:47",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_RIGDetails_$7434_storage_ptr",
+                  "typeIdentifier": "t_struct$_RIGDetails_$7540_storage_ptr",
                   "typeString": "struct RIGNFT.RIGDetails"
                 }
               }
@@ -13992,23 +13992,23 @@
           },
           {
             "body": {
-              "id": 7450,
+              "id": 7556,
               "nodeType": "Block",
               "src": "486:2:47",
               "statements": []
             },
-            "id": 7451,
+            "id": 7557,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7446,
+                    "id": 7552,
                     "name": "_name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7441,
+                    "referencedDeclaration": 7547,
                     "src": "466:5:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -14016,11 +14016,11 @@
                     }
                   },
                   {
-                    "id": 7447,
+                    "id": 7553,
                     "name": "_symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7443,
+                    "referencedDeclaration": 7549,
                     "src": "473:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -14028,13 +14028,13 @@
                     }
                   }
                 ],
-                "id": 7448,
+                "id": 7554,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7445,
+                  "id": 7551,
                   "name": "ERC721Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7858,
+                  "referencedDeclaration": 8087,
                   "src": "453:12:47"
                 },
                 "nodeType": "ModifierInvocation",
@@ -14045,17 +14045,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7444,
+              "id": 7550,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7441,
+                  "id": 7547,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "415:5:47",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7451,
+                  "scope": 7557,
                   "src": "401:19:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -14064,7 +14064,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7440,
+                    "id": 7546,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "401:6:47",
@@ -14077,12 +14077,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7443,
+                  "id": 7549,
                   "mutability": "mutable",
                   "name": "_symbol",
                   "nameLocation": "436:7:47",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7451,
+                  "scope": 7557,
                   "src": "422:21:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -14091,7 +14091,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7442,
+                    "id": 7548,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "422:6:47",
@@ -14106,12 +14106,12 @@
               "src": "400:44:47"
             },
             "returnParameters": {
-              "id": 7449,
+              "id": 7555,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "486:0:47"
             },
-            "scope": 7497,
+            "scope": 7603,
             "src": "389:99:47",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -14119,71 +14119,71 @@
           },
           {
             "body": {
-              "id": 7489,
+              "id": 7595,
               "nodeType": "Block",
               "src": "724:355:47",
               "statements": [
                 {
                   "assignments": [
-                    7470
+                    7576
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7470,
+                      "id": 7576,
                       "mutability": "mutable",
                       "name": "rigDetailsByTokenId",
                       "nameLocation": "752:19:47",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7489,
+                      "scope": 7595,
                       "src": "734:37:47",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                        "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                         "typeString": "struct RIGNFT.RIGDetails"
                       },
                       "typeName": {
-                        "id": 7469,
+                        "id": 7575,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7468,
+                          "id": 7574,
                           "name": "RIGDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7434,
+                          "referencedDeclaration": 7540,
                           "src": "734:10:47"
                         },
-                        "referencedDeclaration": 7434,
+                        "referencedDeclaration": 7540,
                         "src": "734:10:47",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RIGDetails_$7434_storage_ptr",
+                          "typeIdentifier": "t_struct$_RIGDetails_$7540_storage_ptr",
                           "typeString": "struct RIGNFT.RIGDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7474,
+                  "id": 7580,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7471,
+                      "id": 7577,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7439,
+                      "referencedDeclaration": 7545,
                       "src": "774:13:47",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7434_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7540_storage_$",
                         "typeString": "mapping(uint256 => struct RIGNFT.RIGDetails storage ref)"
                       }
                     },
-                    "id": 7473,
+                    "id": 7579,
                     "indexExpression": {
-                      "id": 7472,
+                      "id": 7578,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7453,
+                      "referencedDeclaration": 7559,
                       "src": "788:2:47",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -14197,7 +14197,7 @@
                     "nodeType": "IndexAccess",
                     "src": "774:17:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RIGDetails_$7434_storage",
+                      "typeIdentifier": "t_struct$_RIGDetails_$7540_storage",
                       "typeString": "struct RIGNFT.RIGDetails storage ref"
                     }
                   },
@@ -14209,25 +14209,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7475,
+                          "id": 7581,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "822:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7476,
+                        "id": 7582,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "hashRate",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7423,
+                        "referencedDeclaration": 7529,
                         "src": "822:28:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -14236,25 +14236,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7477,
+                          "id": 7583,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "864:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7478,
+                        "id": 7584,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "gpuTemp",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7425,
+                        "referencedDeclaration": 7531,
                         "src": "864:27:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -14263,25 +14263,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7479,
+                          "id": 7585,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "905:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7480,
+                        "id": 7586,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rigTemp",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7427,
+                        "referencedDeclaration": 7533,
                         "src": "905:27:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -14290,25 +14290,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7481,
+                          "id": 7587,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "946:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7482,
+                        "id": 7588,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "systemPowerLevel",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7429,
+                        "referencedDeclaration": 7535,
                         "src": "946:36:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -14317,25 +14317,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7483,
+                          "id": 7589,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "996:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7484,
+                        "id": 7590,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "minerOS",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7431,
+                        "referencedDeclaration": 7537,
                         "src": "996:27:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -14344,25 +14344,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7485,
+                          "id": 7591,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "1037:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7486,
+                        "id": 7592,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7433,
+                        "referencedDeclaration": 7539,
                         "src": "1037:25:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -14370,7 +14370,7 @@
                         }
                       }
                     ],
-                    "id": 7487,
+                    "id": 7593,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -14383,15 +14383,15 @@
                       "typeString": "tuple(uint256,uint8,uint8,uint256,string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7467,
-                  "id": 7488,
+                  "functionReturnParameters": 7573,
+                  "id": 7594,
                   "nodeType": "Return",
                   "src": "801:271:47"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7490,
+            "id": 7596,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -14399,17 +14399,17 @@
             "nameLocation": "503:15:47",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7454,
+              "id": 7560,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7453,
+                  "id": 7559,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "527:2:47",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "519:10:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14418,7 +14418,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7452,
+                    "id": 7558,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "519:7:47",
@@ -14433,17 +14433,17 @@
               "src": "518:12:47"
             },
             "returnParameters": {
-              "id": 7467,
+              "id": 7573,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7456,
+                  "id": 7562,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "589:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14452,7 +14452,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7455,
+                    "id": 7561,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "589:7:47",
@@ -14465,12 +14465,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7458,
+                  "id": 7564,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "610:5:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14479,7 +14479,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7457,
+                    "id": 7563,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "610:5:47",
@@ -14492,12 +14492,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7460,
+                  "id": 7566,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "629:5:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14506,7 +14506,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7459,
+                    "id": 7565,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "629:5:47",
@@ -14519,12 +14519,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7462,
+                  "id": 7568,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "648:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14533,7 +14533,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7461,
+                    "id": 7567,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "648:7:47",
@@ -14546,12 +14546,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7464,
+                  "id": 7570,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "669:13:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -14560,7 +14560,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7463,
+                    "id": 7569,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "669:6:47",
@@ -14573,12 +14573,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7466,
+                  "id": 7572,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "696:13:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -14587,7 +14587,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7465,
+                    "id": 7571,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "696:6:47",
@@ -14601,7 +14601,7 @@
               ],
               "src": "575:144:47"
             },
-            "scope": 7497,
+            "scope": 7603,
             "src": "494:585:47",
             "stateMutability": "view",
             "virtual": false,
@@ -14609,21 +14609,21 @@
           },
           {
             "body": {
-              "id": 7495,
+              "id": 7601,
               "nodeType": "Block",
               "src": "1129:2:47",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7496,
+            "id": 7602,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7493,
+                "id": 7599,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7492,
+                  "id": 7598,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -14637,25 +14637,25 @@
             "nameLocation": "1094:15:47",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7491,
+              "id": 7597,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1109:2:47"
             },
             "returnParameters": {
-              "id": 7494,
+              "id": 7600,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1129:0:47"
             },
-            "scope": 7497,
+            "scope": 7603,
             "src": "1085:46:47",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7498,
+        "scope": 7604,
         "src": "109:1024:47",
         "usedErrors": []
       }
@@ -14684,7 +14684,7 @@
         4457
       ],
       "ERC721Custom": [
-        7858
+        8087
       ],
       "ERC721URIStorage": [
         4585
@@ -14708,18 +14708,18 @@
         258
       ],
       "RIGNFT": [
-        7497
+        7603
       ],
       "Strings": [
         5208
       ]
     },
-    "id": 7498,
+    "id": 7604,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7418,
+        "id": 7524,
         "literals": [
           "solidity",
           "^",
@@ -14732,11 +14732,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC721Custom.sol",
         "file": "../tokens/ERC721Custom.sol",
-        "id": 7419,
+        "id": 7525,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7498,
-        "sourceUnit": 7859,
+        "scope": 7604,
+        "sourceUnit": 8088,
         "src": "71:36:47",
         "symbolAliases": [],
         "unitAlias": ""
@@ -14746,13 +14746,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7420,
+              "id": 7526,
               "name": "ERC721Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7858,
+              "referencedDeclaration": 8087,
               "src": "128:12:47"
             },
-            "id": 7421,
+            "id": 7527,
             "nodeType": "InheritanceSpecifier",
             "src": "128:12:47"
           }
@@ -14761,10 +14761,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7497,
+        "id": 7603,
         "linearizedBaseContracts": [
-          7497,
-          7858,
+          7603,
+          8087,
           4457,
           104,
           258,
@@ -14782,16 +14782,16 @@
         "nodes": [
           {
             "canonicalName": "RIGNFT.RIGDetails",
-            "id": 7434,
+            "id": 7540,
             "members": [
               {
                 "constant": false,
-                "id": 7423,
+                "id": 7529,
                 "mutability": "mutable",
                 "name": "hashRate",
                 "nameLocation": "183:8:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "175:16:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -14800,7 +14800,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7422,
+                  "id": 7528,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "175:7:47",
@@ -14813,12 +14813,12 @@
               },
               {
                 "constant": false,
-                "id": 7425,
+                "id": 7531,
                 "mutability": "mutable",
                 "name": "gpuTemp",
                 "nameLocation": "207:7:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "201:13:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -14827,7 +14827,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7424,
+                  "id": 7530,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "201:5:47",
@@ -14840,12 +14840,12 @@
               },
               {
                 "constant": false,
-                "id": 7427,
+                "id": 7533,
                 "mutability": "mutable",
                 "name": "rigTemp",
                 "nameLocation": "230:7:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "224:13:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -14854,7 +14854,7 @@
                   "typeString": "uint8"
                 },
                 "typeName": {
-                  "id": 7426,
+                  "id": 7532,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
                   "src": "224:5:47",
@@ -14867,12 +14867,12 @@
               },
               {
                 "constant": false,
-                "id": 7429,
+                "id": 7535,
                 "mutability": "mutable",
                 "name": "systemPowerLevel",
                 "nameLocation": "255:16:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "247:24:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -14881,7 +14881,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7428,
+                  "id": 7534,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "247:7:47",
@@ -14894,12 +14894,12 @@
               },
               {
                 "constant": false,
-                "id": 7431,
+                "id": 7537,
                 "mutability": "mutable",
                 "name": "minerOS",
                 "nameLocation": "288:7:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "281:14:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -14908,7 +14908,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7430,
+                  "id": 7536,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "281:6:47",
@@ -14921,12 +14921,12 @@
               },
               {
                 "constant": false,
-                "id": 7433,
+                "id": 7539,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "312:5:47",
                 "nodeType": "VariableDeclaration",
-                "scope": 7434,
+                "scope": 7540,
                 "src": "305:12:47",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -14935,7 +14935,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7432,
+                  "id": 7538,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "305:6:47",
@@ -14950,29 +14950,29 @@
             "name": "RIGDetails",
             "nameLocation": "154:10:47",
             "nodeType": "StructDefinition",
-            "scope": 7497,
+            "scope": 7603,
             "src": "147:177:47",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7439,
+            "id": 7545,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "369:13:47",
             "nodeType": "VariableDeclaration",
-            "scope": 7497,
+            "scope": 7603,
             "src": "330:52:47",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7434_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7540_storage_$",
               "typeString": "mapping(uint256 => struct RIGNFT.RIGDetails)"
             },
             "typeName": {
-              "id": 7438,
+              "id": 7544,
               "keyType": {
-                "id": 7435,
+                "id": 7541,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "338:7:47",
@@ -14984,23 +14984,23 @@
               "nodeType": "Mapping",
               "src": "330:30:47",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7434_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7540_storage_$",
                 "typeString": "mapping(uint256 => struct RIGNFT.RIGDetails)"
               },
               "valueType": {
-                "id": 7437,
+                "id": 7543,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7436,
+                  "id": 7542,
                   "name": "RIGDetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7434,
+                  "referencedDeclaration": 7540,
                   "src": "349:10:47"
                 },
-                "referencedDeclaration": 7434,
+                "referencedDeclaration": 7540,
                 "src": "349:10:47",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_RIGDetails_$7434_storage_ptr",
+                  "typeIdentifier": "t_struct$_RIGDetails_$7540_storage_ptr",
                   "typeString": "struct RIGNFT.RIGDetails"
                 }
               }
@@ -15009,23 +15009,23 @@
           },
           {
             "body": {
-              "id": 7450,
+              "id": 7556,
               "nodeType": "Block",
               "src": "486:2:47",
               "statements": []
             },
-            "id": 7451,
+            "id": 7557,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7446,
+                    "id": 7552,
                     "name": "_name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7441,
+                    "referencedDeclaration": 7547,
                     "src": "466:5:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -15033,11 +15033,11 @@
                     }
                   },
                   {
-                    "id": 7447,
+                    "id": 7553,
                     "name": "_symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7443,
+                    "referencedDeclaration": 7549,
                     "src": "473:7:47",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -15045,13 +15045,13 @@
                     }
                   }
                 ],
-                "id": 7448,
+                "id": 7554,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7445,
+                  "id": 7551,
                   "name": "ERC721Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7858,
+                  "referencedDeclaration": 8087,
                   "src": "453:12:47"
                 },
                 "nodeType": "ModifierInvocation",
@@ -15062,17 +15062,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7444,
+              "id": 7550,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7441,
+                  "id": 7547,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "415:5:47",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7451,
+                  "scope": 7557,
                   "src": "401:19:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -15081,7 +15081,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7440,
+                    "id": 7546,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "401:6:47",
@@ -15094,12 +15094,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7443,
+                  "id": 7549,
                   "mutability": "mutable",
                   "name": "_symbol",
                   "nameLocation": "436:7:47",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7451,
+                  "scope": 7557,
                   "src": "422:21:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -15108,7 +15108,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7442,
+                    "id": 7548,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "422:6:47",
@@ -15123,12 +15123,12 @@
               "src": "400:44:47"
             },
             "returnParameters": {
-              "id": 7449,
+              "id": 7555,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "486:0:47"
             },
-            "scope": 7497,
+            "scope": 7603,
             "src": "389:99:47",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -15136,71 +15136,71 @@
           },
           {
             "body": {
-              "id": 7489,
+              "id": 7595,
               "nodeType": "Block",
               "src": "724:355:47",
               "statements": [
                 {
                   "assignments": [
-                    7470
+                    7576
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7470,
+                      "id": 7576,
                       "mutability": "mutable",
                       "name": "rigDetailsByTokenId",
                       "nameLocation": "752:19:47",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7489,
+                      "scope": 7595,
                       "src": "734:37:47",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                        "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                         "typeString": "struct RIGNFT.RIGDetails"
                       },
                       "typeName": {
-                        "id": 7469,
+                        "id": 7575,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7468,
+                          "id": 7574,
                           "name": "RIGDetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7434,
+                          "referencedDeclaration": 7540,
                           "src": "734:10:47"
                         },
-                        "referencedDeclaration": 7434,
+                        "referencedDeclaration": 7540,
                         "src": "734:10:47",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_RIGDetails_$7434_storage_ptr",
+                          "typeIdentifier": "t_struct$_RIGDetails_$7540_storage_ptr",
                           "typeString": "struct RIGNFT.RIGDetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7474,
+                  "id": 7580,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7471,
+                      "id": 7577,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7439,
+                      "referencedDeclaration": 7545,
                       "src": "774:13:47",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7434_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_RIGDetails_$7540_storage_$",
                         "typeString": "mapping(uint256 => struct RIGNFT.RIGDetails storage ref)"
                       }
                     },
-                    "id": 7473,
+                    "id": 7579,
                     "indexExpression": {
-                      "id": 7472,
+                      "id": 7578,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7453,
+                      "referencedDeclaration": 7559,
                       "src": "788:2:47",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -15214,7 +15214,7 @@
                     "nodeType": "IndexAccess",
                     "src": "774:17:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_RIGDetails_$7434_storage",
+                      "typeIdentifier": "t_struct$_RIGDetails_$7540_storage",
                       "typeString": "struct RIGNFT.RIGDetails storage ref"
                     }
                   },
@@ -15226,25 +15226,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7475,
+                          "id": 7581,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "822:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7476,
+                        "id": 7582,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "hashRate",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7423,
+                        "referencedDeclaration": 7529,
                         "src": "822:28:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -15253,25 +15253,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7477,
+                          "id": 7583,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "864:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7478,
+                        "id": 7584,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "gpuTemp",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7425,
+                        "referencedDeclaration": 7531,
                         "src": "864:27:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -15280,25 +15280,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7479,
+                          "id": 7585,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "905:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7480,
+                        "id": 7586,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "rigTemp",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7427,
+                        "referencedDeclaration": 7533,
                         "src": "905:27:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -15307,25 +15307,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7481,
+                          "id": 7587,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "946:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7482,
+                        "id": 7588,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "systemPowerLevel",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7429,
+                        "referencedDeclaration": 7535,
                         "src": "946:36:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -15334,25 +15334,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7483,
+                          "id": 7589,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "996:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7484,
+                        "id": 7590,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "minerOS",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7431,
+                        "referencedDeclaration": 7537,
                         "src": "996:27:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -15361,25 +15361,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7485,
+                          "id": 7591,
                           "name": "rigDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7470,
+                          "referencedDeclaration": 7576,
                           "src": "1037:19:47",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_RIGDetails_$7434_memory_ptr",
+                            "typeIdentifier": "t_struct$_RIGDetails_$7540_memory_ptr",
                             "typeString": "struct RIGNFT.RIGDetails memory"
                           }
                         },
-                        "id": 7486,
+                        "id": 7592,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7433,
+                        "referencedDeclaration": 7539,
                         "src": "1037:25:47",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -15387,7 +15387,7 @@
                         }
                       }
                     ],
-                    "id": 7487,
+                    "id": 7593,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -15400,15 +15400,15 @@
                       "typeString": "tuple(uint256,uint8,uint8,uint256,string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7467,
-                  "id": 7488,
+                  "functionReturnParameters": 7573,
+                  "id": 7594,
                   "nodeType": "Return",
                   "src": "801:271:47"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7490,
+            "id": 7596,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -15416,17 +15416,17 @@
             "nameLocation": "503:15:47",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7454,
+              "id": 7560,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7453,
+                  "id": 7559,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "527:2:47",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "519:10:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -15435,7 +15435,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7452,
+                    "id": 7558,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "519:7:47",
@@ -15450,17 +15450,17 @@
               "src": "518:12:47"
             },
             "returnParameters": {
-              "id": 7467,
+              "id": 7573,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7456,
+                  "id": 7562,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "589:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -15469,7 +15469,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7455,
+                    "id": 7561,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "589:7:47",
@@ -15482,12 +15482,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7458,
+                  "id": 7564,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "610:5:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -15496,7 +15496,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7457,
+                    "id": 7563,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "610:5:47",
@@ -15509,12 +15509,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7460,
+                  "id": 7566,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "629:5:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -15523,7 +15523,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 7459,
+                    "id": 7565,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "629:5:47",
@@ -15536,12 +15536,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7462,
+                  "id": 7568,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "648:7:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -15550,7 +15550,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7461,
+                    "id": 7567,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "648:7:47",
@@ -15563,12 +15563,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7464,
+                  "id": 7570,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "669:13:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -15577,7 +15577,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7463,
+                    "id": 7569,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "669:6:47",
@@ -15590,12 +15590,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7466,
+                  "id": 7572,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7490,
+                  "scope": 7596,
                   "src": "696:13:47",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -15604,7 +15604,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7465,
+                    "id": 7571,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "696:6:47",
@@ -15618,7 +15618,7 @@
               ],
               "src": "575:144:47"
             },
-            "scope": 7497,
+            "scope": 7603,
             "src": "494:585:47",
             "stateMutability": "view",
             "virtual": false,
@@ -15626,21 +15626,21 @@
           },
           {
             "body": {
-              "id": 7495,
+              "id": 7601,
               "nodeType": "Block",
               "src": "1129:2:47",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7496,
+            "id": 7602,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7493,
+                "id": 7599,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7492,
+                  "id": 7598,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -15654,25 +15654,25 @@
             "nameLocation": "1094:15:47",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7491,
+              "id": 7597,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1109:2:47"
             },
             "returnParameters": {
-              "id": 7494,
+              "id": 7600,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1129:0:47"
             },
-            "scope": 7497,
+            "scope": 7603,
             "src": "1085:46:47",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7498,
+        "scope": 7604,
         "src": "109:1024:47",
         "usedErrors": []
       }
@@ -15685,7 +15685,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-08T17:12:57.641Z",
+  "updatedAt": "2022-01-09T14:24:30.051Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

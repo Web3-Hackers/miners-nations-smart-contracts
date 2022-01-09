@@ -129,7 +129,10 @@ contract MINE is ERC20Custom {
         onlyOwner
     {
         // Max Ownership can't be 0! So only less than (no equal to)
-        require(_decreaseMaxOwnershipPercentage < maxOwnership());
+        require(
+            _decreaseMaxOwnershipPercentage < maxOwnership(),
+            "MINE: Decreased Max Ownership should be less than Current Max Ownership."
+        );
         uint256 _newMaxOwnershipPercentage = SafeMath.sub(
             maxOwnership(),
             _decreaseMaxOwnershipPercentage
@@ -137,7 +140,7 @@ contract MINE is ERC20Custom {
         require(
             _decreaseMaxOwnershipPercentage > 0 &&
                 (_newMaxOwnershipPercentage <= 100000),
-            "MINE: Increased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
+            "MINE: Decreased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
         );
         _maximumOwnershipPercentage = _newMaxOwnershipPercentage;
     }

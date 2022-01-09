@@ -18087,7 +18087,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7632
+        7738
       ],
       "ERC1155Supply": [
         1719
@@ -18108,7 +18108,7 @@
         5788
       ],
       "MOBONFT": [
-        7290
+        7396
       ],
       "Ownable": [
         104
@@ -18117,12 +18117,12 @@
         258
       ]
     },
-    "id": 7291,
+    "id": 7397,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7238,
+        "id": 7344,
         "literals": [
           "solidity",
           "^",
@@ -18135,11 +18135,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7239,
+        "id": 7345,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7291,
-        "sourceUnit": 7633,
+        "scope": 7397,
+        "sourceUnit": 7739,
         "src": "71:37:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -18149,13 +18149,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7240,
+              "id": 7346,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7632,
+              "referencedDeclaration": 7738,
               "src": "130:13:44"
             },
-            "id": 7241,
+            "id": 7347,
             "nodeType": "InheritanceSpecifier",
             "src": "130:13:44"
           }
@@ -18164,10 +18164,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7290,
+        "id": 7396,
         "linearizedBaseContracts": [
-          7290,
-          7632,
+          7396,
+          7738,
           1719,
           1586,
           258,
@@ -18185,16 +18185,16 @@
         "nodes": [
           {
             "canonicalName": "MOBONFT.MOBODetails",
-            "id": 7246,
+            "id": 7352,
             "members": [
               {
                 "constant": false,
-                "id": 7243,
+                "id": 7349,
                 "mutability": "mutable",
                 "name": "formFactor",
                 "nameLocation": "186:10:44",
                 "nodeType": "VariableDeclaration",
-                "scope": 7246,
+                "scope": 7352,
                 "src": "179:17:44",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18203,7 +18203,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7242,
+                  "id": 7348,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "179:6:44",
@@ -18216,12 +18216,12 @@
               },
               {
                 "constant": false,
-                "id": 7245,
+                "id": 7351,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "213:5:44",
                 "nodeType": "VariableDeclaration",
-                "scope": 7246,
+                "scope": 7352,
                 "src": "206:12:44",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18230,7 +18230,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7244,
+                  "id": 7350,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:6:44",
@@ -18245,29 +18245,29 @@
             "name": "MOBODetails",
             "nameLocation": "157:11:44",
             "nodeType": "StructDefinition",
-            "scope": 7290,
+            "scope": 7396,
             "src": "150:75:44",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7251,
+            "id": 7357,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "271:13:44",
             "nodeType": "VariableDeclaration",
-            "scope": 7290,
+            "scope": 7396,
             "src": "231:53:44",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7246_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7352_storage_$",
               "typeString": "mapping(uint256 => struct MOBONFT.MOBODetails)"
             },
             "typeName": {
-              "id": 7250,
+              "id": 7356,
               "keyType": {
-                "id": 7247,
+                "id": 7353,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "239:7:44",
@@ -18279,23 +18279,23 @@
               "nodeType": "Mapping",
               "src": "231:31:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7246_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7352_storage_$",
                 "typeString": "mapping(uint256 => struct MOBONFT.MOBODetails)"
               },
               "valueType": {
-                "id": 7249,
+                "id": 7355,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7248,
+                  "id": 7354,
                   "name": "MOBODetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7246,
+                  "referencedDeclaration": 7352,
                   "src": "250:11:44"
                 },
-                "referencedDeclaration": 7246,
+                "referencedDeclaration": 7352,
                 "src": "250:11:44",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_MOBODetails_$7246_storage_ptr",
+                  "typeIdentifier": "t_struct$_MOBODetails_$7352_storage_ptr",
                   "typeString": "struct MOBONFT.MOBODetails"
                 }
               }
@@ -18304,23 +18304,23 @@
           },
           {
             "body": {
-              "id": 7259,
+              "id": 7365,
               "nodeType": "Block",
               "src": "343:2:44",
               "statements": []
             },
-            "id": 7260,
+            "id": 7366,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7256,
+                    "id": 7362,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7253,
+                    "referencedDeclaration": 7359,
                     "src": "337:4:44",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -18328,13 +18328,13 @@
                     }
                   }
                 ],
-                "id": 7257,
+                "id": 7363,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7255,
+                  "id": 7361,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7632,
+                  "referencedDeclaration": 7738,
                   "src": "323:13:44"
                 },
                 "nodeType": "ModifierInvocation",
@@ -18345,17 +18345,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7254,
+              "id": 7360,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7253,
+                  "id": 7359,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "317:4:44",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7260,
+                  "scope": 7366,
                   "src": "303:18:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18364,7 +18364,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7252,
+                    "id": 7358,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "303:6:44",
@@ -18379,12 +18379,12 @@
               "src": "302:20:44"
             },
             "returnParameters": {
-              "id": 7258,
+              "id": 7364,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "343:0:44"
             },
-            "scope": 7290,
+            "scope": 7396,
             "src": "291:54:44",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -18392,71 +18392,71 @@
           },
           {
             "body": {
-              "id": 7282,
+              "id": 7388,
               "nodeType": "Block",
               "src": "467:154:44",
               "statements": [
                 {
                   "assignments": [
-                    7271
+                    7377
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7271,
+                      "id": 7377,
                       "mutability": "mutable",
                       "name": "moboDetailsByTokenId",
                       "nameLocation": "496:20:44",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7282,
+                      "scope": 7388,
                       "src": "477:39:44",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_MOBODetails_$7246_memory_ptr",
+                        "typeIdentifier": "t_struct$_MOBODetails_$7352_memory_ptr",
                         "typeString": "struct MOBONFT.MOBODetails"
                       },
                       "typeName": {
-                        "id": 7270,
+                        "id": 7376,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7269,
+                          "id": 7375,
                           "name": "MOBODetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7246,
+                          "referencedDeclaration": 7352,
                           "src": "477:11:44"
                         },
-                        "referencedDeclaration": 7246,
+                        "referencedDeclaration": 7352,
                         "src": "477:11:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_MOBODetails_$7246_storage_ptr",
+                          "typeIdentifier": "t_struct$_MOBODetails_$7352_storage_ptr",
                           "typeString": "struct MOBONFT.MOBODetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7275,
+                  "id": 7381,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7272,
+                      "id": 7378,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7251,
+                      "referencedDeclaration": 7357,
                       "src": "519:13:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7246_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7352_storage_$",
                         "typeString": "mapping(uint256 => struct MOBONFT.MOBODetails storage ref)"
                       }
                     },
-                    "id": 7274,
+                    "id": 7380,
                     "indexExpression": {
-                      "id": 7273,
+                      "id": 7379,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7262,
+                      "referencedDeclaration": 7368,
                       "src": "533:2:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -18470,7 +18470,7 @@
                     "nodeType": "IndexAccess",
                     "src": "519:17:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_MOBODetails_$7246_storage",
+                      "typeIdentifier": "t_struct$_MOBODetails_$7352_storage",
                       "typeString": "struct MOBONFT.MOBODetails storage ref"
                     }
                   },
@@ -18482,25 +18482,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7276,
+                          "id": 7382,
                           "name": "moboDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7271,
+                          "referencedDeclaration": 7377,
                           "src": "554:20:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_MOBODetails_$7246_memory_ptr",
+                            "typeIdentifier": "t_struct$_MOBODetails_$7352_memory_ptr",
                             "typeString": "struct MOBONFT.MOBODetails memory"
                           }
                         },
-                        "id": 7277,
+                        "id": 7383,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "formFactor",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7243,
+                        "referencedDeclaration": 7349,
                         "src": "554:31:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -18509,25 +18509,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7278,
+                          "id": 7384,
                           "name": "moboDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7271,
+                          "referencedDeclaration": 7377,
                           "src": "587:20:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_MOBODetails_$7246_memory_ptr",
+                            "typeIdentifier": "t_struct$_MOBODetails_$7352_memory_ptr",
                             "typeString": "struct MOBONFT.MOBODetails memory"
                           }
                         },
-                        "id": 7279,
+                        "id": 7385,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7245,
+                        "referencedDeclaration": 7351,
                         "src": "587:26:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -18535,7 +18535,7 @@
                         }
                       }
                     ],
-                    "id": 7280,
+                    "id": 7386,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -18548,15 +18548,15 @@
                       "typeString": "tuple(string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7268,
-                  "id": 7281,
+                  "functionReturnParameters": 7374,
+                  "id": 7387,
                   "nodeType": "Return",
                   "src": "546:68:44"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7283,
+            "id": 7389,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -18564,17 +18564,17 @@
             "nameLocation": "360:15:44",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7263,
+              "id": 7369,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7262,
+                  "id": 7368,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "384:2:44",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7283,
+                  "scope": 7389,
                   "src": "376:10:44",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -18583,7 +18583,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7261,
+                    "id": 7367,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "376:7:44",
@@ -18598,17 +18598,17 @@
               "src": "375:12:44"
             },
             "returnParameters": {
-              "id": 7268,
+              "id": 7374,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7265,
+                  "id": 7371,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7283,
+                  "scope": 7389,
                   "src": "433:13:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18617,7 +18617,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7264,
+                    "id": 7370,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "433:6:44",
@@ -18630,12 +18630,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7267,
+                  "id": 7373,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7283,
+                  "scope": 7389,
                   "src": "448:13:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -18644,7 +18644,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7266,
+                    "id": 7372,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "448:6:44",
@@ -18658,7 +18658,7 @@
               ],
               "src": "432:30:44"
             },
-            "scope": 7290,
+            "scope": 7396,
             "src": "351:270:44",
             "stateMutability": "view",
             "virtual": false,
@@ -18666,21 +18666,21 @@
           },
           {
             "body": {
-              "id": 7288,
+              "id": 7394,
               "nodeType": "Block",
               "src": "671:2:44",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7289,
+            "id": 7395,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7286,
+                "id": 7392,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7285,
+                  "id": 7391,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -18694,25 +18694,25 @@
             "nameLocation": "636:15:44",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7284,
+              "id": 7390,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "651:2:44"
             },
             "returnParameters": {
-              "id": 7287,
+              "id": 7393,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "671:0:44"
             },
-            "scope": 7290,
+            "scope": 7396,
             "src": "627:46:44",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7291,
+        "scope": 7397,
         "src": "110:565:44",
         "usedErrors": []
       }
@@ -18735,7 +18735,7 @@
         1586
       ],
       "ERC1155Custom": [
-        7632
+        7738
       ],
       "ERC1155Supply": [
         1719
@@ -18756,7 +18756,7 @@
         5788
       ],
       "MOBONFT": [
-        7290
+        7396
       ],
       "Ownable": [
         104
@@ -18765,12 +18765,12 @@
         258
       ]
     },
-    "id": 7291,
+    "id": 7397,
     "license": "GPL-3.0-or-later",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7238,
+        "id": 7344,
         "literals": [
           "solidity",
           "^",
@@ -18783,11 +18783,11 @@
       {
         "absolutePath": "project:/contracts/tokens/ERC1155Custom.sol",
         "file": "../tokens/ERC1155Custom.sol",
-        "id": 7239,
+        "id": 7345,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 7291,
-        "sourceUnit": 7633,
+        "scope": 7397,
+        "sourceUnit": 7739,
         "src": "71:37:44",
         "symbolAliases": [],
         "unitAlias": ""
@@ -18797,13 +18797,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7240,
+              "id": 7346,
               "name": "ERC1155Custom",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7632,
+              "referencedDeclaration": 7738,
               "src": "130:13:44"
             },
-            "id": 7241,
+            "id": 7347,
             "nodeType": "InheritanceSpecifier",
             "src": "130:13:44"
           }
@@ -18812,10 +18812,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 7290,
+        "id": 7396,
         "linearizedBaseContracts": [
-          7290,
-          7632,
+          7396,
+          7738,
           1719,
           1586,
           258,
@@ -18833,16 +18833,16 @@
         "nodes": [
           {
             "canonicalName": "MOBONFT.MOBODetails",
-            "id": 7246,
+            "id": 7352,
             "members": [
               {
                 "constant": false,
-                "id": 7243,
+                "id": 7349,
                 "mutability": "mutable",
                 "name": "formFactor",
                 "nameLocation": "186:10:44",
                 "nodeType": "VariableDeclaration",
-                "scope": 7246,
+                "scope": 7352,
                 "src": "179:17:44",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18851,7 +18851,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7242,
+                  "id": 7348,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "179:6:44",
@@ -18864,12 +18864,12 @@
               },
               {
                 "constant": false,
-                "id": 7245,
+                "id": 7351,
                 "mutability": "mutable",
                 "name": "grade",
                 "nameLocation": "213:5:44",
                 "nodeType": "VariableDeclaration",
-                "scope": 7246,
+                "scope": 7352,
                 "src": "206:12:44",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -18878,7 +18878,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7244,
+                  "id": 7350,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "206:6:44",
@@ -18893,29 +18893,29 @@
             "name": "MOBODetails",
             "nameLocation": "157:11:44",
             "nodeType": "StructDefinition",
-            "scope": 7290,
+            "scope": 7396,
             "src": "150:75:44",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 7251,
+            "id": 7357,
             "mutability": "mutable",
             "name": "_tokenDetails",
             "nameLocation": "271:13:44",
             "nodeType": "VariableDeclaration",
-            "scope": 7290,
+            "scope": 7396,
             "src": "231:53:44",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7246_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7352_storage_$",
               "typeString": "mapping(uint256 => struct MOBONFT.MOBODetails)"
             },
             "typeName": {
-              "id": 7250,
+              "id": 7356,
               "keyType": {
-                "id": 7247,
+                "id": 7353,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "239:7:44",
@@ -18927,23 +18927,23 @@
               "nodeType": "Mapping",
               "src": "231:31:44",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7246_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7352_storage_$",
                 "typeString": "mapping(uint256 => struct MOBONFT.MOBODetails)"
               },
               "valueType": {
-                "id": 7249,
+                "id": 7355,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 7248,
+                  "id": 7354,
                   "name": "MOBODetails",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7246,
+                  "referencedDeclaration": 7352,
                   "src": "250:11:44"
                 },
-                "referencedDeclaration": 7246,
+                "referencedDeclaration": 7352,
                 "src": "250:11:44",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_MOBODetails_$7246_storage_ptr",
+                  "typeIdentifier": "t_struct$_MOBODetails_$7352_storage_ptr",
                   "typeString": "struct MOBONFT.MOBODetails"
                 }
               }
@@ -18952,23 +18952,23 @@
           },
           {
             "body": {
-              "id": 7259,
+              "id": 7365,
               "nodeType": "Block",
               "src": "343:2:44",
               "statements": []
             },
-            "id": 7260,
+            "id": 7366,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 7256,
+                    "id": 7362,
                     "name": "_uri",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7253,
+                    "referencedDeclaration": 7359,
                     "src": "337:4:44",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -18976,13 +18976,13 @@
                     }
                   }
                 ],
-                "id": 7257,
+                "id": 7363,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 7255,
+                  "id": 7361,
                   "name": "ERC1155Custom",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 7632,
+                  "referencedDeclaration": 7738,
                   "src": "323:13:44"
                 },
                 "nodeType": "ModifierInvocation",
@@ -18993,17 +18993,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7254,
+              "id": 7360,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7253,
+                  "id": 7359,
                   "mutability": "mutable",
                   "name": "_uri",
                   "nameLocation": "317:4:44",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7260,
+                  "scope": 7366,
                   "src": "303:18:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19012,7 +19012,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7252,
+                    "id": 7358,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "303:6:44",
@@ -19027,12 +19027,12 @@
               "src": "302:20:44"
             },
             "returnParameters": {
-              "id": 7258,
+              "id": 7364,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "343:0:44"
             },
-            "scope": 7290,
+            "scope": 7396,
             "src": "291:54:44",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -19040,71 +19040,71 @@
           },
           {
             "body": {
-              "id": 7282,
+              "id": 7388,
               "nodeType": "Block",
               "src": "467:154:44",
               "statements": [
                 {
                   "assignments": [
-                    7271
+                    7377
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 7271,
+                      "id": 7377,
                       "mutability": "mutable",
                       "name": "moboDetailsByTokenId",
                       "nameLocation": "496:20:44",
                       "nodeType": "VariableDeclaration",
-                      "scope": 7282,
+                      "scope": 7388,
                       "src": "477:39:44",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_MOBODetails_$7246_memory_ptr",
+                        "typeIdentifier": "t_struct$_MOBODetails_$7352_memory_ptr",
                         "typeString": "struct MOBONFT.MOBODetails"
                       },
                       "typeName": {
-                        "id": 7270,
+                        "id": 7376,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 7269,
+                          "id": 7375,
                           "name": "MOBODetails",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 7246,
+                          "referencedDeclaration": 7352,
                           "src": "477:11:44"
                         },
-                        "referencedDeclaration": 7246,
+                        "referencedDeclaration": 7352,
                         "src": "477:11:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_MOBODetails_$7246_storage_ptr",
+                          "typeIdentifier": "t_struct$_MOBODetails_$7352_storage_ptr",
                           "typeString": "struct MOBONFT.MOBODetails"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 7275,
+                  "id": 7381,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 7272,
+                      "id": 7378,
                       "name": "_tokenDetails",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7251,
+                      "referencedDeclaration": 7357,
                       "src": "519:13:44",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7246_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_MOBODetails_$7352_storage_$",
                         "typeString": "mapping(uint256 => struct MOBONFT.MOBODetails storage ref)"
                       }
                     },
-                    "id": 7274,
+                    "id": 7380,
                     "indexExpression": {
-                      "id": 7273,
+                      "id": 7379,
                       "name": "id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7262,
+                      "referencedDeclaration": 7368,
                       "src": "533:2:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -19118,7 +19118,7 @@
                     "nodeType": "IndexAccess",
                     "src": "519:17:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_MOBODetails_$7246_storage",
+                      "typeIdentifier": "t_struct$_MOBODetails_$7352_storage",
                       "typeString": "struct MOBONFT.MOBODetails storage ref"
                     }
                   },
@@ -19130,25 +19130,25 @@
                     "components": [
                       {
                         "expression": {
-                          "id": 7276,
+                          "id": 7382,
                           "name": "moboDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7271,
+                          "referencedDeclaration": 7377,
                           "src": "554:20:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_MOBODetails_$7246_memory_ptr",
+                            "typeIdentifier": "t_struct$_MOBODetails_$7352_memory_ptr",
                             "typeString": "struct MOBONFT.MOBODetails memory"
                           }
                         },
-                        "id": 7277,
+                        "id": 7383,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "formFactor",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7243,
+                        "referencedDeclaration": 7349,
                         "src": "554:31:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19157,25 +19157,25 @@
                       },
                       {
                         "expression": {
-                          "id": 7278,
+                          "id": 7384,
                           "name": "moboDetailsByTokenId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7271,
+                          "referencedDeclaration": 7377,
                           "src": "587:20:44",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_MOBODetails_$7246_memory_ptr",
+                            "typeIdentifier": "t_struct$_MOBODetails_$7352_memory_ptr",
                             "typeString": "struct MOBONFT.MOBODetails memory"
                           }
                         },
-                        "id": 7279,
+                        "id": 7385,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "grade",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7245,
+                        "referencedDeclaration": 7351,
                         "src": "587:26:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19183,7 +19183,7 @@
                         }
                       }
                     ],
-                    "id": 7280,
+                    "id": 7386,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -19196,15 +19196,15 @@
                       "typeString": "tuple(string memory,string memory)"
                     }
                   },
-                  "functionReturnParameters": 7268,
-                  "id": 7281,
+                  "functionReturnParameters": 7374,
+                  "id": 7387,
                   "nodeType": "Return",
                   "src": "546:68:44"
                 }
               ]
             },
             "functionSelector": "c1e03728",
-            "id": 7283,
+            "id": 7389,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -19212,17 +19212,17 @@
             "nameLocation": "360:15:44",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7263,
+              "id": 7369,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7262,
+                  "id": 7368,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "384:2:44",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7283,
+                  "scope": 7389,
                   "src": "376:10:44",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19231,7 +19231,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7261,
+                    "id": 7367,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "376:7:44",
@@ -19246,17 +19246,17 @@
               "src": "375:12:44"
             },
             "returnParameters": {
-              "id": 7268,
+              "id": 7374,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7265,
+                  "id": 7371,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7283,
+                  "scope": 7389,
                   "src": "433:13:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19265,7 +19265,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7264,
+                    "id": 7370,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "433:6:44",
@@ -19278,12 +19278,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 7267,
+                  "id": 7373,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7283,
+                  "scope": 7389,
                   "src": "448:13:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -19292,7 +19292,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 7266,
+                    "id": 7372,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "448:6:44",
@@ -19306,7 +19306,7 @@
               ],
               "src": "432:30:44"
             },
-            "scope": 7290,
+            "scope": 7396,
             "src": "351:270:44",
             "stateMutability": "view",
             "virtual": false,
@@ -19314,21 +19314,21 @@
           },
           {
             "body": {
-              "id": 7288,
+              "id": 7394,
               "nodeType": "Block",
               "src": "671:2:44",
               "statements": []
             },
             "functionSelector": "136c93e6",
-            "id": 7289,
+            "id": 7395,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 7286,
+                "id": 7392,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 7285,
+                  "id": 7391,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -19342,25 +19342,25 @@
             "nameLocation": "636:15:44",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7284,
+              "id": 7390,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "651:2:44"
             },
             "returnParameters": {
-              "id": 7287,
+              "id": 7393,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "671:0:44"
             },
-            "scope": 7290,
+            "scope": 7396,
             "src": "627:46:44",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 7291,
+        "scope": 7397,
         "src": "110:565:44",
         "usedErrors": []
       }
@@ -19373,7 +19373,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-08T17:12:57.627Z",
+  "updatedAt": "2022-01-09T14:24:30.035Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
