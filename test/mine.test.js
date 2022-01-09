@@ -1,5 +1,5 @@
 const { expect } = require("chai");
-const { expectRevert } = require("@openzeppelin/test-helpers");
+const truffleAssert = require("truffle-assertions");
 const MINE = artifacts.require("MINE");
 
 contract("MINE Token", (accounts) => {
@@ -54,7 +54,7 @@ contract("MINE Token", (accounts) => {
     });
 
     it("Should disable set new cap supply by non-owners", async () => {
-      expectRevert(
+      await truffleAssert.reverts(
         // Set new supply to 200 billion
         this.mine.setCap(web3.utils.toBN("200000000000000000000000000000"), {
           from: accounts[1],
@@ -64,7 +64,7 @@ contract("MINE Token", (accounts) => {
     });
 
     it("Should disable set new cap supply with 0 value", async () => {
-      expectRevert(
+      truffleAssert.reverts(
         // Set new supply to 200 billion
         this.mine.setCap(0, {
           from: accounts[0],
@@ -87,7 +87,7 @@ contract("MINE Token", (accounts) => {
 
     it("Should disable increase cap supply by non-owners", async () => {
       // increase the cap supply by 20 billion
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.increaseCap(
           web3.utils.toBN("20000000000000000000000000000"),
           {
@@ -99,7 +99,7 @@ contract("MINE Token", (accounts) => {
     });
 
     it("Should disable increase cap supply with 0 value", async () => {
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.increaseCap(0, {
           from: accounts[0],
         }),
@@ -141,7 +141,7 @@ contract("MINE Token", (accounts) => {
       );
 
       // decrease the cap supply by 10 billion
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.decreaseCap(
           web3.utils.toBN("10000000000000000000000000000"),
           {
@@ -163,7 +163,7 @@ contract("MINE Token", (accounts) => {
         }
       );
 
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.decreaseCap(0, {
           from: accounts[0],
         }),
@@ -174,7 +174,7 @@ contract("MINE Token", (accounts) => {
     it("Should disable decrease cap supply more than the difference between cap supply and minted supply", async () => {
       // Since 20 billion has been minted and the cap supply is 20 billion, the difference between them is 0
       // Therefore, it shall revert as the cap supply can't be decreased (without deviating from the total minted supply)
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.decreaseCap(
           web3.utils.toBN("10000000000000000000000000000"),
           {
@@ -214,7 +214,7 @@ contract("MINE Token", (accounts) => {
     it("Should disable set maximum ownership percentage for non-owners", async () => {
       expect(parseInt(await this.mine.maxOwnership())).to.equal(20000);
 
-      expectRevert(
+      truffleAssert.reverts(
         // Set Maximum Ownership Percentage to 30%
         this.mine.setMaxOwnership(30000, { from: accounts[1] }),
         "Ownable: caller is not the owner"
@@ -228,14 +228,14 @@ contract("MINE Token", (accounts) => {
     });
 
     it("Should disable set maximum ownership percentage with 0 value", async () => {
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.setMaxOwnership(0, { from: accounts[0] }),
         "MINE: New Max Ownership Percentage must be larger than 0 or at most 100% (5 decimals)"
       );
     });
 
     it("Should disable set maximum ownership percentage with > 100% value", async () => {
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.setMaxOwnership(101000, { from: accounts[0] }),
         "MINE: New Max Ownership Percentage must be larger than 0 or at most 100% (5 decimals)"
       );
@@ -250,14 +250,14 @@ contract("MINE Token", (accounts) => {
 
     it("Should disable increase maximum ownership percentage for non-owners", async () => {
       // Increase Maximum Ownership by 20%
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.increaseMaxOwnership(20000, { from: accounts[1] }),
         "Ownable: caller is not the owner"
       );
     });
 
     it("Should disable increase maximum ownership with 0 value", async () => {
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.increaseMaxOwnership(0, { from: accounts[0] }),
         "MINE: Increased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
       );
@@ -266,7 +266,7 @@ contract("MINE Token", (accounts) => {
     it("Should disable increase maximum ownership when the new max ownership total exceeds 100%", async () => {
       // By default, the maximum ownership is 20%
       // By increasing it by 81%, it should exceed 100% which will revert
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.increaseMaxOwnership(81000, { from: accounts[0] }),
         "MINE: Increased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
       );
@@ -281,21 +281,21 @@ contract("MINE Token", (accounts) => {
 
     it("Should disable decrease maximum ownership percentage for non-owners", async () => {
       // Decrease Maximum Ownership by 1%
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.decreaseMaxOwnership(1000, { from: accounts[1] }),
         "Ownable: caller is not the owner"
       );
     });
 
     it("Should disable decrease maximum ownership with 0 value", async () => {
-      expectRevert(
+      truffleAssert.reverts(
         this.mine.decreaseMaxOwnership(0, { from: accounts[0] }),
         "MINE: Decreased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
       );
     });
 
     it("Should disable decrease maximum ownership with value larger than current maximum ownership percentage", async () => {
-      expectRevert(
+      truffleAssert.reverts(
         // Decrease maximum ownership by 21% (> 20%)
         this.mine.decreaseMaxOwnership(21000, { from: accounts[0] }),
         "MINE: Decreased Max Ownership should be less than Current Max Ownership."
@@ -339,7 +339,7 @@ contract("MINE Token", (accounts) => {
       // 21% of 20 billion, hardcoded at the moment
       const transferAmount = "4200000000000000000000000000";
 
-      expectRevert(
+      truffleAssert.reverts(
         // Send 21% of the total existing supply (SHOULD FAIL)
         this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
           from: accounts[0],
@@ -354,7 +354,7 @@ contract("MINE Token", (accounts) => {
 
       await this.mine.setMaxOwnership(15000, { from: accounts[0] });
 
-      expectRevert(
+      truffleAssert.reverts(
         // Send 20% of the total existing supply, but max ownership changed to 15% (SHOULD FAIL)
         this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
           from: accounts[0],
@@ -369,7 +369,7 @@ contract("MINE Token", (accounts) => {
 
       await this.mine.decreaseMaxOwnership(5000, { from: accounts[0] });
 
-      expectRevert(
+      truffleAssert.reverts(
         // Send 20% of the total existing supply, but max ownership changed to 15% (SHOULD FAIL)
         this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
           from: accounts[0],
@@ -401,7 +401,7 @@ contract("MINE Token", (accounts) => {
       const mintAmount = "5200000000000000000000000000";
       await this.mine.increaseCap(mintAmount, { from: accounts[0] });
 
-      expectRevert(
+      truffleAssert.reverts(
         // Adding 26% of initial supply will result to >20% post ownership (SHOULD FAIL)
         this.mine.mint(accounts[1], web3.utils.toBN(mintAmount), {
           from: accounts[0],
