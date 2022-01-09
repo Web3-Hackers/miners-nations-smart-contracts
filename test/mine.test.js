@@ -4,7 +4,7 @@ const MINE = artifacts.require("MINE");
 
 contract("MINE Token", (accounts) => {
   beforeEach(async () => {
-    this.mine = await MINE.new(20000, { from: accounts[0] });
+    this.mine = await MINE.new(accounts[0], 20000, { from: accounts[0] });
   });
 
   /**
@@ -13,22 +13,23 @@ contract("MINE Token", (accounts) => {
    * - Should have the default maximum ownership percentage of 20%
    */
   describe("Token Initialization", () => {
-    it("Should mine initial supply successfully", async () => {
-      const initialMintAmount = 100000000000000;
-      expect(parseInt(await this.mine.balanceOf(accounts[0]))).to.equal(0);
-
-      await this.mine.mint(accounts[0], initialMintAmount, {
-        from: accounts[0],
-      });
-
-      expect(parseInt(await this.mine.balanceOf(accounts[0]))).to.equal(
-        initialMintAmount
-      );
+    it("Should mine initial supply successfully (20 billion)", async () => {
+      expect(parseInt(await this.mine.balanceOf(accounts[0]))).to.equal(2e28);
     });
 
     it("Should have initial maximum ownership percentage of 20%", async () => {
       expect(parseInt(await this.mine.maxOwnership())).to.equal(20000);
     });
+  });
+
+  describe("Token Cap Supply", () => {
+    it("Should enable set new cap supply by the owner", async () => {});
+
+    it("Should disable set new cap supply by non-owners", async () => {});
+
+    it("Should enable set new cap supply by the owner", async () => {});
+
+    it("Should enable set new cap supply by the owner", async () => {});
   });
 
   /**
@@ -63,31 +64,22 @@ contract("MINE Token", (accounts) => {
    */
   describe("Token Transfer with Maximum Ownership Restriction", () => {
     it("Should enable transfer to address with less than or equal to the maximum ownership", async () => {
-      const initialMintAmount = 100000000000000;
-
-      await this.mine.mint(accounts[0], initialMintAmount, {
+      // 20% of 20 billion, hardcoded at the moment
+      const transferAmount = "4000000000000000000000000000";
+      await this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
         from: accounts[0],
       });
 
-      await this.mine.transfer(accounts[1], initialMintAmount * 0.2, {
-        from: accounts[0],
-      });
-
-      expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(
-        initialMintAmount * 0.2
-      );
+      expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(4e27);
     });
 
     it("Should disable transfer to address with larger than the maximum ownership", async () => {
-      const initialMintAmount = 100000000000000;
-
-      await this.mine.mint(accounts[0], initialMintAmount, {
-        from: accounts[0],
-      });
+      // 21% of 20 billion, hardcoded at the moment
+      const transferAmount = "4200000000000000000000000000";
 
       expectRevert(
         // Send 21% of the total existing supply (SHOULD FAIL)
-        this.mine.transfer(accounts[1], initialMintAmount * 0.21, {
+        this.mine.transfer(accounts[1], web3.utils.toBN(transferAmount), {
           from: accounts[0],
         }),
         "MINE: End balance exceeding the maximum ownership percentage of total supply is prohibited!"
@@ -102,32 +94,24 @@ contract("MINE Token", (accounts) => {
    */
   describe("Token Minting with Maximum Ownership Restriction", () => {
     it("Should enable mint to address with less than or equal to the maximum ownership", async () => {
-      const initialMintAmount = 100000000000000;
-
-      await this.mine.mint(accounts[0], initialMintAmount, {
-        from: accounts[0],
-      });
+      const mintAmount = "5000000000000000000000000000";
+      await this.mine.increaseCap(mintAmount, { from: accounts[0] });
 
       // Adding 25% of initial supply will result in 20% post ownership
-      await this.mine.mint(accounts[1], initialMintAmount * 0.25, {
+      await this.mine.mint(accounts[1], web3.utils.toBN(mintAmount), {
         from: accounts[0],
       });
 
-      expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(
-        initialMintAmount * 0.25
-      );
+      expect(parseInt(await this.mine.balanceOf(accounts[1]))).to.equal(5e27);
     });
 
     it("Should disable mint to address with greater than the maximum ownership", async () => {
-      const initialMintAmount = 100000000000000;
-
-      await this.mine.mint(accounts[0], initialMintAmount, {
-        from: accounts[0],
-      });
+      const mintAmount = "5200000000000000000000000000";
+      await this.mine.increaseCap(mintAmount, { from: accounts[0] });
 
       expectRevert(
         // Adding 26% of initial supply will result to >20% post ownership (SHOULD FAIL)
-        this.mine.mint(accounts[1], initialMintAmount * 0.26, {
+        this.mine.mint(accounts[1], web3.utils.toBN(mintAmount), {
           from: accounts[0],
         }),
         "MINE: End balance exceeding the maximum ownership percentage of total supply is prohibited!"

@@ -17,13 +17,17 @@ contract MINE is ERC20Custom {
      */
     uint256 private _maximumOwnershipPercentage;
 
-    constructor(uint256 _maximumOwnershipPercentageInput)
+    constructor(
+        address _multisigWallet,
+        uint256 _maximumOwnershipPercentageInput
+    )
         ERC20Custom(
             "MINE Token",
             "MINE",
             SafeMath.mul(2, 10**(10 + decimals())) // 20 Billion has 10 zeroes
         )
     {
+        _mint(_multisigWallet, SafeMath.mul(2, 10**(10 + decimals())));
         _maximumOwnershipPercentage = _maximumOwnershipPercentageInput;
     }
 
