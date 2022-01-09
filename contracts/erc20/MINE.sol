@@ -2,31 +2,33 @@
 
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "../tokens/ERC20Custom.sol";
 
 contract MINE is ERC20Custom {
-    using SafeMath for uint256;
     enum TokenOperation {
         MINT,
         TRANSFER
     }
 
     /**
-     * Represents the Maximum Ownership percentage a wallet can hold MINE Token
+     * @dev Represents the Maximum Ownership percentage a wallet can hold MINE Token
      *
      * NOTE: At the moment, we will be using 3 decimals for the calculation
      */
     uint256 private _maximumOwnershipPercentage;
 
     constructor(uint256 _maximumOwnershipPercentageInput)
-        ERC20Custom("MINE Token", "MINE")
+        ERC20Custom(
+            "MINE Token",
+            "MINE",
+            SafeMath.mul(2, 10**(10 + decimals())) // 20 Billion has 10 zeroes
+        )
     {
         _maximumOwnershipPercentage = _maximumOwnershipPercentageInput;
     }
 
     /**
-     * Check whether the
+     * @dev Check whether the
      */
     modifier onlyRestrictedOwnership(
         address to,
@@ -50,12 +52,15 @@ contract MINE is ERC20Custom {
                         ),
                         100000
                     ),
-                "End balance exceeding the maximum ownership percentage of total supply is prohibited!"
+                "MINE: End balance exceeding the maximum ownership percentage of total supply is prohibited!"
             );
         }
         _;
     }
 
+    /**
+     * @dev Calculate the total supply of token post-operation (TRANSFER or MINT)
+     */
     function calculateTotalSupplyByTokenOperation(
         uint256 mintedAmount,
         TokenOperation tokenOperation
@@ -68,14 +73,14 @@ contract MINE is ERC20Custom {
     }
 
     /**
-     * Return the Maximum Ownership Percentage of an address
+     * @dev Return the Maximum Ownership Percentage of an address
      */
     function maxOwnership() public view returns (uint256) {
         return _maximumOwnershipPercentage;
     }
 
     /**
-     * Set the Maximum Ownership Percentage with new `_newMaxOwnershipPercentage` value,
+     * @dev Set the Maximum Ownership Percentage with new `_newMaxOwnershipPercentage` value,
      * that can only be passed by the owner/admin of the contract
      */
     function setMaxOwnership(uint256 _newMaxOwnershipPercentage)
@@ -84,13 +89,13 @@ contract MINE is ERC20Custom {
     {
         require(
             _newMaxOwnershipPercentage <= 100000,
-            "New Max Ownership Percentage must be at most 100% (5 decimals)"
+            "MINE: New Max Ownership Percentage must be at most 100% (5 decimals)"
         );
         _maximumOwnershipPercentage = _newMaxOwnershipPercentage;
     }
 
     /**
-     * Minting `amount` number of new tokens to `to` address with
+     * @dev Minting `amount` number of new tokens to `to` address with
      * `onLyRestrictedOwnership` modifier checks
      */
     function mint(address to, uint256 amount)
@@ -111,7 +116,7 @@ contract MINE is ERC20Custom {
     }
 
     /**
-     * Add `onlyRestrictedOwnership` modifier to check beforehand whether the total
+     * @dev Add `onlyRestrictedOwnership` modifier to check beforehand whether the total
      * accumulation exceeds the maxiumum ownership percentage, represented by
      * `_maxOwnership` variable
      */
