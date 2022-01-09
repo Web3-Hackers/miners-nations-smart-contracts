@@ -101,6 +101,48 @@ contract MINE is ERC20Custom {
     }
 
     /**
+     * @dev Increase the Maximum Ownership Percentage with new `_increaseMaxOwnershipPercentage` value,
+     * that can only be passed by the owner/admin of the contract
+     */
+    function increaseMaxOwnership(uint256 _increaseMaxOwnershipPercentage)
+        external
+        onlyOwner
+    {
+        uint256 _newMaxOwnershipPercentage = SafeMath.add(
+            maxOwnership(),
+            _increaseMaxOwnershipPercentage
+        );
+        require(
+            _increaseMaxOwnershipPercentage > 0 &&
+                (_newMaxOwnershipPercentage <= 100000),
+            "MINE: Increased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
+        );
+        _maximumOwnershipPercentage = _newMaxOwnershipPercentage;
+    }
+
+    /**
+     * @dev Decrease the Maximum Ownership Percentage with new `_decreaseMaxOwnershipPercentage` value,
+     * that can only be passed by the owner/admin of the contract
+     */
+    function decreaseMaxOwnership(uint256 _decreaseMaxOwnershipPercentage)
+        external
+        onlyOwner
+    {
+        // Max Ownership can't be 0! So only less than (no equal to)
+        require(_decreaseMaxOwnershipPercentage < maxOwnership());
+        uint256 _newMaxOwnershipPercentage = SafeMath.sub(
+            maxOwnership(),
+            _decreaseMaxOwnershipPercentage
+        );
+        require(
+            _decreaseMaxOwnershipPercentage > 0 &&
+                (_newMaxOwnershipPercentage <= 100000),
+            "MINE: Increased Max Ownership Percentage must be larger than 0 or the sum with the current Max Ownership must be at most 100% (5 decimals)"
+        );
+        _maximumOwnershipPercentage = _newMaxOwnershipPercentage;
+    }
+
+    /**
      * @dev Minting `amount` number of new tokens to `to` address with
      * `onLyRestrictedOwnership` modifier checks
      */

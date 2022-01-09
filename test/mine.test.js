@@ -9,11 +9,18 @@ contract("MINE Token", (accounts) => {
 
   /**
    * Testing basic features after token initialization:
+   * - Should have the correct name, symbol, and decimals
    * - Should mine the initial supply correctly
    * - Should have the default maximum ownership percentage of 20%
    */
   describe("Token Initialization", () => {
-    it("Should mine initial supply successfully (20 billion)", async () => {
+    it("Should have the correct name, symbol, and decimals", async () => {
+      expect(await this.mine.name()).to.equal("MINE Token");
+      expect(await this.mine.symbol()).to.equal("MINE");
+      expect(parseInt(await this.mine.decimals())).to.equal(18);
+    });
+
+    it("Should minted initial supply successfully (20 billion)", async () => {
       expect(parseInt(await this.mine.balanceOf(accounts[0]))).to.equal(2e28);
     });
 
@@ -263,7 +270,7 @@ contract("MINE Token", (accounts) => {
   /**
    * Testing Token Minting with Maximum Ownership Feature:
    * - Should only allow minting to address with less than or equal to the maximum ownership percentage
-   * - Shoudl unallow minting to address with greater than the maximum ownership percentage (Whale-Resistance Ownership)
+   * - Should unallow minting to address with greater than the maximum ownership percentage (Whale-Resistance Ownership)
    */
   describe("Token Minting with Maximum Ownership Restriction", () => {
     it("Should enable mint to address with less than or equal to the maximum ownership", async () => {
