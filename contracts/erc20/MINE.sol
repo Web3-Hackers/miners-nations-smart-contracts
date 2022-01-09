@@ -32,7 +32,8 @@ contract MINE is ERC20Custom {
     }
 
     /**
-     * @dev Check whether the
+     * @dev Check whether the post operation balance is less than or equal to the
+     * maximum ownership percentage
      */
     modifier onlyRestrictedOwnership(
         address to,
@@ -92,8 +93,9 @@ contract MINE is ERC20Custom {
         onlyOwner
     {
         require(
-            _newMaxOwnershipPercentage <= 100000,
-            "MINE: New Max Ownership Percentage must be at most 100% (5 decimals)"
+            _newMaxOwnershipPercentage > 0 &&
+                _newMaxOwnershipPercentage <= 100000,
+            "MINE: New Max Ownership Percentage must be larger than 0 or at most 100% (5 decimals)"
         );
         _maximumOwnershipPercentage = _newMaxOwnershipPercentage;
     }

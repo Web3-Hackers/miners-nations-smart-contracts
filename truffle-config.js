@@ -168,8 +168,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          "wss://speedy-nodes-nyc.moralis.io/{process.env.MORALIS_SPEEDY_NODES_KEY}/avalanche/mainnet/ws"
-          // `https://speedy-nodes-nyc.moralis.io/${process.env.MORALIS_SPEEDY_NODES_KEY}/avalanche/mainnet`
+          `https://speedy-nodes-nyc.moralis.io/${process.env.MORALIS_SPEEDY_NODES_KEY}/avalanche/mainnet`
         ),
       network_id: 1,
       skipDryRun: true,
